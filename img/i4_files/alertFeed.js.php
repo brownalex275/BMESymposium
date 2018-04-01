@@ -1,0 +1,1 @@
+document.write('<div class="alertCarolinaMessage adverse" style="z-index:100; min-height: 19px; width: 100%; padding: 2px 0; background: #c6ddf6; color: #003366; text-align: center;"><a style="color: #003366;" href="http://alertcarolina.unc.edu">Adverse Weather: Campus moving to Condition 1 at noon until 10 p.m. Next update at 8 p.m.</a></div>');
