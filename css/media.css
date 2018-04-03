@@ -39,4 +39,23 @@
 	.mr-3 {
 		margin-right: 5.6rem!important;
 	}
+
+	.venue-info {
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+		margin-left: -50px;
+
+	}
+
+	.speaker img {
+		margin-left: 60px;
+		margin-bottom: 30px;
+	}
+
+	.speaker-text{
+		width: 50vw;
+		height: 23vh;
+		left: 65px;
+
 }
+
