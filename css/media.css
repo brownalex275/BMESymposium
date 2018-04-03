@@ -60,18 +60,22 @@
 
 	.time-title {
 		font-size: 15px !important;
+		font-weight: 600;
 	}
 
 	.timeline-title {
 		font-size: 10px;
+		font-weight: 600;
 	}
 
 	.text-muted {
 		font-size: 8px;
+		font-weight: 600;
 	}
 
 	.timeline-body {
 		font-size: 8px;
+		font-weight: 600;
 	}
 
 	.timeline-panel {
@@ -80,10 +84,6 @@
 
 	.sponsor-mobile {
 		margin-top: -200px !important;
-	}
-
-	.timeline-section {
-		font-weight: 600 !important;
 	}
 
 	.photos {
