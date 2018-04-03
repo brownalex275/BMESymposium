@@ -1,8 +1,8 @@
 @media (max-width: 1200px) {
-	.navbar > .container{
+	.navbar > .container {
 		max-width: 600px;
 	}
-	.logo{
+	.logo {
 		margin-left: -250px;
 	}
 
@@ -10,16 +10,32 @@
 		margin-right: 20px !important;
 
 	}
+
+	.timeline-panel {
+		width: 33vw !important;
+	}
+
+	.timeline-badge {
+		display: none;
+	}
 }
 
 
 
 @media (max-width: 768px) {
-	  .navbar {
+	.navbar {
 		display: none !important;
 	}
 
 	.carousel-inner {
-		height: 50px; !important;
+		height: 70vh !important;
 	}
-}
+
+	.logo-big {
+		width: 100vw !important;
+		margin-top: -300px;
+	}
+
+	.mr-3 {
+		margin-right: 5.6rem!important;
+	}
