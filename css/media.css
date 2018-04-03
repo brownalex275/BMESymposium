@@ -48,7 +48,7 @@
 	}
 
 	.speaker img {
-		margin-left: 60px;
+		margin-left: 70px;
 		margin-bottom: 30px;
 	}
 
@@ -56,6 +56,29 @@
 		width: 50vw;
 		height: 23vh;
 		left: 65px;
+	}
+
+	.time-title {
+		font-size: 15px !important;
+	}
+
+	.timeline-title {
+		font-size: 10px;
+	}
+
+	.text-muted {
+		font-size: 8px;
+	}
+
+	.timeline-body {
+		font-size: 8px;
+	}
+
+	.timeline-panel {
+		width: 45vw !important;
+	}
+
 
 }
+
 
