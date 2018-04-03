@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+	.navbar > .container{
+		max-width: 600px;
+	}
+	.logo{
+		margin-left: -250px;
+	}
+
+	.nav-link {
+		margin-right: 20px !important;
+
+	}
+}
+
+
+
+@media (max-width: 768px) {
+	  .navbar {
+		display: none !important;
+	}
+
+	.carousel-inner {
+		height: 50px; !important;
+	}
+}
