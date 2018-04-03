@@ -52,7 +52,7 @@
 		margin-bottom: 30px;
 	}
 
-	.speaker-text{
+	.speaker-text {
 		width: 50vw;
 		height: 23vh;
 		left: 65px;
@@ -88,6 +88,19 @@
 
 	.photos {
 		margin-left: 30px;
+	}
+
+	.pb-4 {
+		margin-left: 90px !important;
+	}
+
+	#carousel-example-1z {
+		display: none !important;
+	}
+
+	.logo-alt {
+		display: block;
+		margin-top: 30px;
+		width: 90vw !important;
+	}
 }
-
-

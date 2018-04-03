@@ -766,3 +766,9 @@ textarea {
 	-webkit-filter: blur(5px) brightness(0.5);
 
 }
+
+.logo-alt {
+	width: 180vh;
+	height: auto;
+	display: none;
+}
