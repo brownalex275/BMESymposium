@@ -1,4 +1,5 @@
 /* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -8,12 +9,16 @@ html {
 	overflow-y: scroll;
 }
 
+body {
+	overflow: hidden;
+}
+
 html,
 body,
 .view {
 
 	background-color: #44074c;
-	color:white;
+	color: white;
 }
 
 /* Full Page Carousel itself*/
@@ -695,6 +700,7 @@ textarea {
 .logo-big {
 	width: 180vh;
 	height: auto;
+	margin-top: -300px;
 }
 
 .venue-more {
@@ -734,6 +740,7 @@ textarea {
 .page-footer {
 	background-color: white !important;
 }
+
 .page-footer i {
 	color: #44074c;
 }
@@ -741,4 +748,3 @@ textarea {
 .personal-space {
 	margin-top: 200px;
 }
-
