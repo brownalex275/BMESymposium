@@ -81,6 +81,13 @@
 	.sponsor-mobile {
 		margin-top: -200px !important;
 	}
+
+	.timeline-section {
+		font-weight: 600 !important;
+	}
+
+	.photos {
+		margin-left: 30px;
 }
 
 
