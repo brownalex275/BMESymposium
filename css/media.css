@@ -78,7 +78,9 @@
 		width: 45vw !important;
 	}
 
-
+	.sponsor-mobile {
+		margin-top: -200px !important;
+	}
 }
 
 
