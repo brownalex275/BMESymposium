@@ -249,11 +249,11 @@ body,
 .timeline > li > .timeline-panel {
 	width: 46%;
 	float: left;
-	border: 1px solid #d4d4d4;
+
 	border-radius: 2px;
 	padding: 20px;
 	position: relative;
-	background-color: #DB38B4;
+	background-color: rgba(0, 0, 0, 0);
 	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
@@ -271,7 +271,7 @@ body,
 	top: 16px;
 	left: 50%;
 	margin-left: -25px;
-	background-color: #F23264;
+	background-color: #9b30e8;
 	z-index: 100;
 	border-top-right-radius: 50%;
 	border-top-left-radius: 50%;
@@ -316,12 +316,8 @@ body,
 .scaled {
 	-webkit-transform: scale(0.6);
 	transform: scale(0.6);
-	overflow-x: scroll;
-	overflow-y: hidden;
 	white-space: nowrap;
 	margin-top: -250px;
-	border: 1px solid white;
-	border-radius: 5px;
 	padding: 50px 50px 50px 50px;
 
 
@@ -331,7 +327,9 @@ body,
 .timeline-wrapper {
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
-	width: 70%
+	width: 70%;
+	margin-left: 150px;
+
 }
 
 .timeline-section {
@@ -743,6 +741,7 @@ textarea {
 
 .page-footer i {
 	color: #44074c;
+	font-size: 30px;
 }
 
 .personal-space {
