@@ -551,14 +551,14 @@
 									<label>
 						First Name<span class="req ">*</span>
 					  </label>
-									<input type="text " required autocomplete="off " />
+									<input id="fname" type=" text " required autocomplete="off " />
 								</div>
 
 								<div class="field-wrap ">
 									<label>
 						Last Name<span class="req ">*</span>
 					  </label>
-									<input type="text " required autocomplete="off " />
+									<input id="lname" type="text " required autocomplete="off " />
 								</div>
 							</div>
 
@@ -566,23 +566,23 @@
 								<label>
 					  Email Address<span class="req ">*</span>
 					</label>
-								<input type="email " required autocomplete="off " />
+								<input id="email" type="email " required autocomplete="off " />
 							</div>
 
 							<div class="field-wrap ">
 								<label>
 					  Organization<span class="req ">*</span>
 					</label>
-								<input type="password " required autocomplete="off " />
+								<input id="org" type="password " required autocomplete="off " />
 							</div>
 
-							<button type="submit " class="button button-block ">Submit</button>
+							<button type="button " class="button button-block " onclick="submitForm() " value="submit ">Submit</button>
 
 						</form>
 
 					</div>
 
-					<div id="login ">
+					<div id=" login ">
 						<h1>Welcome Back!</h1>
 
 						<form action="/ " method="post ">
@@ -701,11 +701,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js "></script>
 	<script>
 		baguetteBox.run('.tz-gallery');
+
 	</script>
 	<!-- Initializations -->
 	<script type="text/javascript ">
 		// Animations initialization
 		new WOW().init();
+
 	</script>
 
 </body>
