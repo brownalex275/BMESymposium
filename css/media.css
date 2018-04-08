@@ -1,106 +1,138 @@
-@media (max-width: 1200px) {
-	.navbar > .container {
-		max-width: 600px;
-	}
-	.logo {
-		margin-left: -250px;
+@media (max-width: 1024px) {
+
+	.navbar {
+		background-color: rgba(255, 255, 255, 1);
 	}
 
-	.nav-link {
-		margin-right: 20px !important;
-
+	.scaled {
+		margin-left: -20px;
 	}
 
-	.timeline-panel {
-		width: 33vw !important;
+	.speaker-text {
+		width: 18vw;
+	}
+	.speaker-name {
+		margin-left: 0;
+	}
+	.timeline > li > .timeline-panel {
+		width: 50%;
 	}
 
-	.timeline-badge {
-		display: none;
+	.col-mobile {
+		margin-right: 22px;
 	}
 }
 
-
-
 @media (max-width: 768px) {
-	.navbar {
-		display: none !important;
+	.row-mobile-1 {
+		text-align: center
 	}
 
-	.carousel-inner {
-		height: 70vh !important;
+	.row-mobile-2 {
+		text-align: center
 	}
 
-	.logo-big {
-		width: 100vw !important;
-		margin-top: -300px;
-	}
 
-	.mr-3 {
-		margin-right: 5.6rem!important;
-	}
+	.scaled {
+		margin-left: -105px;
 
-	.venue-info {
-		-webkit-transform: scale(0.8);
-		transform: scale(0.8);
-		margin-left: -50px;
-
-	}
-
-	.speaker img {
-		margin-left: 70px;
-		margin-bottom: 30px;
 	}
 
 	.speaker-text {
 		width: 50vw;
-		height: 23vh;
-		left: 65px;
+		font-size: 9px;
+		margin-left: 75px;
+
+
 	}
 
-	.time-title {
-		font-size: 15px !important;
-		font-weight: 600;
-	}
 
 	.timeline-title {
-		font-size: 10px;
-		font-weight: 600;
+		font-size: 15px;
 	}
 
-	.text-muted {
-		font-size: 8px;
-		font-weight: 600;
+
+
+	.img-mobile {
+		text-align: center;
+
 	}
 
-	.timeline-body {
-		font-size: 8px;
-		font-weight: 600;
+	.feature-icon {
+		padding-left: 0px;
+
 	}
 
-	.timeline-panel {
-		width: 45vw !important;
+	.venue-info {
+		margin-left: 10px;
+		width: 400px;
+		margin-top: 50px;
+		margin-bottom: 100px;
+
 	}
 
-	.sponsor-mobile {
-		margin-top: -200px !important;
+	.schedule-title {
+		margin-bottom: 70px;
+	}
+}
+
+@media (max-width: 425px) {
+	.timeline > li > .timeline-panel {
+		width: 70%;
+		margin-left: -100px;
 	}
 
-	.photos {
-		margin-left: 30px;
+	.inverted-panel {
+		margin-right: -100px;
 	}
 
-	.pb-4 {
-		margin-left: 90px !important;
+	.speaker-text {
+		width: 45vw;
+		font-size: 9px;
+		margin-left: 95px;
+
+
 	}
 
-	#carousel-example-1z {
-		display: none !important;
+
+}
+
+@media (max-width: 375px) {
+	.venue-info {
+		margin-left: 10px;
+		width: 300px;
+		margin-top: 50px;
+		margin-bottom: 100px;
+
 	}
 
-	.logo-alt {
-		display: block;
-		margin-top: 30px;
-		width: 90vw !important;
+	.speaker-text {
+		width: 60vw;
+		margin-left: 45px;
+
+
+	}
+}
+
+@media (max-width: 370px) {
+
+
+	.speaker-text {
+		width: 50vw;
+		margin-left: 70px;
+
+
+	}
+}
+
+
+@media (max-width: 330px) {
+
+
+	.speaker-text {
+		width: 60vw;
+		margin-left: 45px;
+
+
 	}
 }

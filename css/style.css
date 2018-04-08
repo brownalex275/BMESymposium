@@ -1,10 +1,5 @@
 /* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
 
-* {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
 html {
 	overflow-y: scroll;
 }
@@ -22,6 +17,11 @@ body,
 }
 
 /* Full Page Carousel itself*/
+
+video {
+	max-width: 100%;
+	height: auto;
+}
 
 .carousel {
 	height: 100%;
@@ -54,8 +54,14 @@ body,
 }
 
 .navbar a {
-	color: black !important;
+	font-weight: 400;
+	color: #44074c !important;
 }
+
+.navbar a:hover {
+	color: #9b30e8 !important;
+}
+
 
 /* Adding color to the Navbar on mobile */
 
@@ -114,19 +120,22 @@ body,
 }
 
 .about-title {
-	font-weight: 400px;
+	font-weight: 400;
 	font-size: 20px;
 	letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
 
 }
 
 #venueSection {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url('../img/convention-center.jpg');
-	background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('../img/convention-center.jpg');
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url('../img/venue.png');
+	background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('../img/venue.png');
 	background-size: contain, cover;
 	background-repeat: no-repeat;
 	margin-top: 48px;
 	margin-bottom: 48px;
+	width: 100vw;
+	height: auto;
 }
 
 .venue-info {
@@ -135,7 +144,7 @@ body,
 	padding: 13%;
 	margin-left: 200px;
 	width: 500px;
-	margin-top: 100px;
+	margin-top: 50px;
 	margin-bottom: 100px;
 
 }
@@ -165,9 +174,9 @@ body,
 	font-size: 9px;
 	font-weight: 100;
 	z-index: 1;
-	background-color: #DB38B4;
+	background-color: #9b30e8;
 	opacity: 0;
-	width: 30vh;
+	width: 15vw;
 	top: 5px;
 	left: 5px;
 	right: 5px;
@@ -200,6 +209,22 @@ body,
 }
 
 .box-4:hover .speaker-text {
+	opacity: 0.97;
+}
+
+.box-1:active .speaker-text {
+	opacity: 0.97;
+}
+
+.box-2:active .speaker-text {
+	opacity: 0.97;
+}
+
+.box-3:active .speaker-text {
+	opacity: 0.97;
+}
+
+.box-4:active .speaker-text {
 	opacity: 0.97;
 }
 
@@ -249,16 +274,28 @@ body,
 .timeline > li > .timeline-panel {
 	width: 46%;
 	float: left;
-
 	border-radius: 2px;
 	padding: 20px;
 	position: relative;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgba(155, 48, 232, 0);
 	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+	cursor: pointer;
 }
 
+.timeline > li > .timeline-panel:hover {
 
+	background-color: rgba(155, 48, 232, 1);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.timeline-panel:active {
+
+	background-color: rgba(155, 48, 232, 1);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
 
 
 .timeline > li > .timeline-badge {
@@ -314,11 +351,11 @@ body,
 }
 
 .scaled {
-	-webkit-transform: scale(0.6);
-	transform: scale(0.6);
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
 	white-space: nowrap;
-	margin-top: -250px;
-	padding: 50px 50px 50px 50px;
+	margin-top: -332px;
+	margin-left: 15px;
 
 
 
@@ -333,18 +370,13 @@ body,
 }
 
 .timeline-section {
-	height: 800px;
-
-
+	margin-top: 40px;
+	padding-top: 8px;
+	width: 100vw;
+	height: auto;
 }
 
-.timelineTitle {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
-	letter-spacing: 3px;
-	margin-bottom: 100px;
 
-}
 
 .form {
 	background: rgba(19, 35, 47, 0.0);
@@ -353,7 +385,7 @@ body,
 	margin: 40px auto;
 	border-radius: 4px;
 	-webkit-box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.5);
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -505,7 +537,7 @@ textarea {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	background: #db38b4;
+	background: #9b30e8;
 	color: #ffffff;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
@@ -514,7 +546,9 @@ textarea {
 
 .button:hover,
 .button:focus {
-	background: #f23264;
+	background: white;
+	cursor: pointer;
+	color: #9b30e8;
 }
 
 .button-block {
@@ -528,12 +562,11 @@ textarea {
 }
 
 #registrationSection {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url('../img/event.jpg');
-	background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('../img/event.jpg');
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url('../img/convention-center.jpg');
+	background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url('../img/convention-center.jpg');
 	background-size: contain, cover;
 	background-repeat: no-repeat;
-	margin-top: 100px;
-	margin-bottom: 100px;
+
 }
 
 
@@ -696,9 +729,8 @@ textarea {
 }
 
 .logo-big {
-	width: 180vh;
+	width: 100vw;
 	height: auto;
-	margin-top: -300px;
 }
 
 .venue-more {
@@ -737,15 +769,16 @@ textarea {
 
 .page-footer {
 	background-color: white !important;
+
 }
 
 .page-footer i {
-	color: #44074c;
-	font-size: 30px;
+	color: #44074c !important;
+	font-size: 20px !important;
 }
 
 .personal-space {
-	margin-top: 200px;
+	margin-top: 52px;
 }
 
 .photos img {
@@ -770,4 +803,69 @@ textarea {
 	width: 180vh;
 	height: auto;
 	display: none;
+}
+
+a.link-text {
+	font-weight: 400;
+	color: #44074c !important;
+
+}
+
+a.link-text:hover {
+	color: #9b30e8 !important;
+}
+
+.schedule-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: white;
+	margin-bottom: 48px;
+}
+
+.btn-outline-white {
+
+	color: #44074c !important;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	border: none !important;
+}
+
+.btn-outline-white:hover {
+	border: none !important;
+	color: #9b30e8 !important;
+}
+
+.speaker-name {
+	font-weight: 400px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-left: -60px;
+	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.pb-4 a {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.share-title {
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: #44074c;
+}
+
+.rgba-white-light {
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.navbar-toggler-icon {
+	color: #44074c !important;
+}
+
+.sponsor-mobile {
+	margin-top: -250px;
 }
