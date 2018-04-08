@@ -10,6 +10,7 @@
 
 	.speaker-text {
 		width: 18vw;
+		margin-left: 3px;
 	}
 	.speaker-name {
 		margin-left: 0;
@@ -39,9 +40,9 @@
 	}
 
 	.speaker-text {
-		width: 50vw;
-		font-size: 9px;
-		margin-left: 75px;
+		width: 19vw;
+		font-size: 7px;
+		margin-left: -3px;
 
 
 	}
@@ -107,12 +108,17 @@
 	}
 
 	.speaker-text {
-		width: 60vw;
-		margin-left: 45px;
+		width: 50vw;
+		margin-left: 75px;
 
 
 	}
 }
+
+
+
+
+
 
 @media (max-width: 370px) {
 
