@@ -29,5 +29,35 @@ function submitForm() {
 			}
 		});
 	}
+
 	return false;
 }
+
+$('#fname').focusin(function () {
+	$("#flabel").hide();
+});
+
+$('#fname').focusout(function () {
+	$('#flabel').show();
+});
+$('#lname').focusin(function () {
+	$("#llabel").hide();
+});
+
+$('#lname').focusout(function () {
+	$('#llabel').show();
+});
+$('#email').focusin(function () {
+	$("#elabel").hide();
+});
+
+$('#email').focusout(function () {
+	$('#elabel').show();
+});
+$('#org').focusin(function () {
+	$("#olabel").hide();
+});
+
+$('#org').focusout(function () {
+	$('#olabel').show();
+});

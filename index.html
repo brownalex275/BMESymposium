@@ -24,9 +24,9 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
 	<link href="css/mdb.min.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
 	<!-- Your custom styles (optional) -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,600" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 	<link rel="stylesheet" href="css/media.min.css">
 </head>
@@ -159,7 +159,7 @@
 							</div>
 							<div class="col-md-4 col-mobile ">
 								<h5 class="feature-title ">Location</h5>
-								<p class="black-text " style="white-space: nowrap; ">Durham Convention Center<br>301 West Morgan St<br>Durham, NC 27701</p>
+								<p class="black-text  wrap-this">Durham Convention Center<br>301 West Morgan St<br>Durham, NC 27701</p>
 							</div>
 							<div class="col-md-1 mr-3 ">
 								<i class="feature-icon fa fa-bullhorn fa-2x blue-text "></i>
@@ -181,7 +181,6 @@
 						</div>
 						<!--/Second row-->
 
-						<div style="height:30px "></div>
 
 						<!--Third row-->
 						<div class="row row-mobile-2  ">
@@ -190,7 +189,7 @@
 							</div>
 							<div class="col-md-4 col-mobile ">
 								<h5 class="feature-title ">Date &amp; Time </h5>
-								<p class="black-text" style="white-space: nowrap; ">May 2nd, 2018<br>2-8:30 PMPM<br>Presentations begin at 2:15 PM</p>
+								<p class="black-text wrap-this">May 2nd, 2018<br>2-8:30 PMPM<br>Presentations begin at 2:15 PM</p>
 							</div>
 							<div class="col-md-1 mr-3 ">
 								<i class="feature-icon fa fa-users fa-2x cyan-text "></i>
@@ -236,7 +235,7 @@
 						<div class="venue-info ">
 							<p class="venue-title ">Venue</p>
 							<p class="venue-more">Durham Convention Center</p>
-							<p class="white-text " style="margin-bottom: 10px; ">The Durham Convention Center is located in the heart of the City Center District of Downtown Durham. It is a premier location for events, meetings, and conventions. The Durham Convention Center Complex includes the Durham Arts Center, Durham Armory, Carolina Theater, and the connected Durham Mariott City Center.</p>
+							<p class="white-text move-this">The Durham Convention Center is located in the heart of the City Center District of Downtown Durham. It is a premier location for events, meetings, and conventions. The Durham Convention Center Complex includes the Durham Arts Center, Durham Armory, Carolina Theater, and the connected Durham Mariott City Center.</p>
 
 							<a class="link-text" href="http://www.durhamconventioncenter.com/parking" target="_blank">Parking &amp; Directions</a>
 
@@ -250,7 +249,7 @@
 
 		</section>
 		<section>
-			<h3 class="text-center sectionTitle " style="margin-bottom: 48px; ">PRESENTING TEAMS</h3>
+			<h3 class="text-center sectionTitle add-this">PRESENTING TEAMS</h3>
 			<h3 class="text-center about-title ">TBA</h3>
 			<!--
 			<div class="container gallery-container2 ">
@@ -394,7 +393,7 @@
 				</div>
 			</div>
 
-			<div id="schedule "></div>
+			<div id="schedule"></div>
 
 		</section>
 
@@ -532,7 +531,7 @@
 					<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
 				</div>
 			</div> -->
-			<div id="register "></div>
+			<div id="register"></div>
 		</section>
 
 		<section id="registrationSection">
@@ -548,14 +547,14 @@
 
 							<div class="top-row ">
 								<div class="field-wrap ">
-									<label>
+									<label id="flabel">
 						First Name<span class="req ">*</span>
 					  </label>
 									<input id="fname" type=" text " required autocomplete="off " />
 								</div>
 
 								<div class="field-wrap ">
-									<label>
+									<label id="llabel">
 						Last Name<span class="req ">*</span>
 					  </label>
 									<input id="lname" type="text " required autocomplete="off " />
@@ -563,14 +562,14 @@
 							</div>
 
 							<div class="field-wrap ">
-								<label>
+								<label id="elabel">
 					  Email Address<span class="req ">*</span>
 					</label>
 								<input id="email" type="email " required autocomplete="off " />
 							</div>
 
 							<div class="field-wrap ">
-								<label>
+								<label id="olabel">
 					  Organization<span class="req ">*</span>
 					</label>
 								<input id="org" type="password " required autocomplete="off " />
@@ -619,7 +618,7 @@
 
 
 		<section>
-			<div id="contact "></div>
+			<div id="contact"></div>
 			<h2 class="text-center sectionTitle ">Contact</h2>
 			<h2 class="about-title text-center ">
 				Philips Hall, Room 35
@@ -701,13 +700,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js "></script>
 	<script>
 		baguetteBox.run('.tz-gallery');
-
 	</script>
 	<!-- Initializations -->
 	<script type="text/javascript ">
 		// Animations initialization
 		new WOW().init();
-
 	</script>
 
 </body>
