@@ -35,6 +35,7 @@ html {
 .navbar a:hover {
 	color: #9b30e8!important;
 }
+
 .logo {
 	width: 20vh;
 	height: auto;
@@ -59,6 +60,7 @@ html {
 	width: 100vw;
 	height: auto;
 }
+
 .rgba-white-light {
 	background-color: rgba(255, 255, 255, .3);
 }
@@ -805,4 +807,3 @@ a.link-text:hover {
 	color: #44074c!important;
 	font-size: 20px!important;
 }
-

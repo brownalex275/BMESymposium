@@ -26,8 +26,16 @@
 	<link href="css/mdb.min.css" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
 	<!-- Your custom styles (optional) -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,600" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+	<script href="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: ['Montserrat Pro:100,400,600']
+			}
+		});
+
+	</script>
+
 	<link rel="stylesheet" href="css/media.min.css">
 </head>
 
@@ -700,11 +708,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js "></script>
 	<script>
 		baguetteBox.run('.tz-gallery');
+
 	</script>
 	<!-- Initializations -->
 	<script type="text/javascript ">
 		// Animations initialization
 		new WOW().init();
+
 	</script>
 
 </body>
