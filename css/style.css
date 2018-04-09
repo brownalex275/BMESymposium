@@ -11,36 +11,14 @@ body {
 .view,
 body,
 html {
-	background-color: #44074c;
-	color: #fff;
-}
-
-
-.navbar {
-	background-color: rgba(255, 255, 255, .2);
-	font-family: Montserrat, sans-serif;
-	font-size: 15px;
-	letter-spacing: 3px;
-}
-
-.top-nav-collapse {
-	background-color: #fff;
-}
-
-.navbar a {
-	font-weight: 400;
+	background-color: #ece6ed;
 	color: #330033 !important;
+	font-family: Montserrat, sans-serif;
 }
 
-.navbar a:hover {
-	color: #9b30e8!important;
+section {
+	padding-top: 50px !important;
 }
-
-.logo {
-	width: 20vh;
-	height: auto;
-}
-
 
 .carousel {
 	height: 100%;
@@ -62,7 +40,7 @@ html {
 }
 
 .rgba-white-light {
-	background-color: rgba(255, 255, 255, .3);
+	background-color: rgba(255, 255, 255, .2);
 }
 
 video {
@@ -71,23 +49,51 @@ video {
 }
 
 
+.navbar {
+	background-color: rgba(255, 255, 255, 1);
+	font-size: 15px;
+	letter-spacing: 3px;
+	box-shadow: 10px 10px 10px rgba(180, 155, 183, 0.5);
+	-moz-box-shadow: 10px 10px 10px rgba(180, 155, 183, 0.5);
+	-webkit-box-shadow: 10px 10px 10px rgba(180, 155, 183, 0.5);
+}
+
+
+.navbar a {
+	font-weight: 500;
+	color: #330033 !important;
+}
+
+.navbar a:hover {
+	color: #9b30e8!important;
+}
+
+.navbar-nav > li > .dropdown-menu {
+	background-color: #FF0000;
+}
+
+.logo {
+	width: 20vh;
+	height: auto;
+}
+
+
 .sectionTitle {
 	font-family: Montserrat, sans-serif;
 	font-weight: 600;
 	letter-spacing: 3px;
-	margin-top: 48px;
-	margin-bottom: 48px;
+	color: #330033 !important;
+	margin-bottom: 50px;
+
 }
 
 .feature-title {
 	font-weight: 600;
 	font-size: 20px;
+	font-family: Montserrat, sans-serif;
 }
 
-.black-text {
-	font-weight: 300;
-	color: #fff!important
-}
+
 
 .feature-icon {
 	padding-left: 15px;
@@ -98,16 +104,18 @@ video {
 	font-weight: 400;
 	font-size: 20px;
 	letter-spacing: 2px;
-	font-family: Montserrat, sans-serif;
+	padding-bottom: 10px;
+}
+
+.about-title i {
+	font-size: 30px;
 }
 
 #venueSection {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, .5)), to(rgba(20, 20, 20, .5))), url(../img/venue.png);
-	background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../img/venue.png);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .3)), to(rgba(0, 0, 0, .3))), url(../img/venue.png);
+	background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../img/venue.png);
 	background-size: contain, cover;
 	background-repeat: no-repeat;
-	margin-top: 48px;
-	margin-bottom: 48px;
 	width: 100vw;
 	height: auto;
 }
@@ -128,7 +136,20 @@ video {
 	letter-spacing: 3px;
 	margin-bottom: 20px;
 	font-size: 1.75em;
-	color: #000;
+	position: relative;
+
+}
+
+.venue-title:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 5px;
+	position: absolute;
+	background-color: #9b30e8;
+	left: -30px;
+	top: 20px;
+
 }
 
 .venue-textTitle {
@@ -147,7 +168,7 @@ video {
 	font-size: 9px;
 	font-weight: 100;
 	z-index: 1;
-	background-color: #9b30e8;
+	background-color: #44074c;
 	opacity: 0;
 	width: 15vw;
 	top: 5px;
@@ -158,6 +179,7 @@ video {
 	padding: 10px 10px 10px 10px;
 	-webkit-transition: .5s;
 	transition: .5s;
+	margin-left: -2px;
 }
 
 .box-1,
@@ -251,10 +273,10 @@ video {
 	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .175);
 	box-shadow: 0 1px 6px rgba(0, 0, 0, .175);
 	cursor: pointer;
+
 }
 
 .timeline > li > .timeline-panel:hover {
-	background-color: rgba(155, 48, 232, 1);
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
 }
@@ -303,12 +325,15 @@ video {
 
 .timeline-title {
 	margin-top: 0;
-	color: inherit;
+	color: #ece6ed;
+	font-weight: 500;
 }
 
 .timeline-body > p,
 .timeline-body > ul {
 	margin-bottom: 0;
+	font-weight: 500;
+	color: #ece6ed;
 }
 
 .timeline-body > p + p {
@@ -327,12 +352,18 @@ video {
 	display: inline-block;
 	font-family: Montserrat, sans-serif;
 	width: 70%;
-	margin-left: 175px;
+	margin-left: 174px;
 }
 
 .timeline-section {
 	margin-top: 40px;
 	padding-top: 8px;
+	width: 100vw;
+	height: auto;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5))), url(../img/schedule.jpg);
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/schedule.jpg);
+	background-size: contain, cover;
+	background-repeat: no-repeat;
 	width: 100vw;
 	height: auto;
 }
@@ -419,7 +450,7 @@ label {
 
 label .req {
 	margin: 2px;
-	color: #46d44e;
+	color: #9b30e8;
 }
 
 label.active {
@@ -496,8 +527,8 @@ textarea {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	background: #9b30e8;
-	color: #fff;
+	background: #44074c;
+	color: #ece6ed;
 	-webkit-transition: all .5s ease;
 	transition: all .5s ease;
 	-webkit-appearance: none;
@@ -505,9 +536,9 @@ textarea {
 
 .button:focus,
 .button:hover {
-	background: #fff;
+	background: #ece6ed;
 	cursor: pointer;
-	color: #9b30e8;
+	color: #44074c;
 }
 
 .button-block {
@@ -527,10 +558,7 @@ textarea {
 	background-repeat: no-repeat;
 }
 
-.contact-info {
-	font-size: 30px;
-	font-family: Montserrat, sans-serif;
-}
+
 
 .time-title {
 	font-weight: 400px;
@@ -677,13 +705,9 @@ textarea {
 	font-weight: 400px;
 	font-size: 20px;
 	letter-spacing: 2px;
-	color: #000;
+
 }
 
-.white-text {
-	font-weight: 300;
-	color: #000!important;
-}
 
 .speaker-main {
 	font-size: 12px;
@@ -698,11 +722,12 @@ textarea {
 }
 
 .text-muted {
-	color: #fff!important;
+	color: #d9cddb !important;
 }
 
 .contact-icon {
-	color: #9b30e8;
+	color: #44074c;
+	padding-bottom: 10px;
 }
 
 
@@ -727,11 +752,12 @@ textarea {
 
 a.link-text {
 	font-weight: 400;
-	color: #330033!important;
+	color: #9b30e8 !important;
 }
 
 a.link-text:hover {
-	color: #9b30e8!important;
+	color: #46D44E!important;
+
 }
 
 .schedule-title {
@@ -755,7 +781,7 @@ a.link-text:hover {
 }
 
 .speaker-name {
-	font-weight: 400px;
+	font-weight: 400;
 	font-size: 15px;
 	letter-spacing: 1px;
 	margin-left: -60px;
@@ -765,9 +791,6 @@ a.link-text:hover {
 
 
 
-.sponsor-mobile {
-	margin-top: -250px;
-}
 
 .wrap-this {
 	white-space: nowrap;
@@ -777,14 +800,8 @@ a.link-text:hover {
 	margin-bottom: 10px;
 }
 
-.add-this {
-	margin-bottom: 48px;
 
-}
 
-.personal-space {
-	margin-top: 52px;
-}
 
 .pb-4 a {
 	padding-left: 20px;
@@ -806,4 +823,42 @@ a.link-text:hover {
 .page-footer i {
 	color: #44074c!important;
 	font-size: 20px!important;
+}
+
+.page-footer i:hover {
+	color: #9b30e8 !important;
+
+}
+
+#team-box {
+	background-color: #d9cddb;
+	margin-top: -50px;
+}
+
+.inverse-color {
+	color: #ece6ed !important;
+}
+
+.photos {
+	background-color: #d9cddb;
+}
+
+.no-margin {
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+.registration-title {
+	color: #ece6ed;
+}
+
+.pt-4 a:hover .fa {
+	color: #9b30e8 !important;
+}
+
+.about-more {
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: 2px;
+
 }
