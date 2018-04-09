@@ -18,7 +18,10 @@ html {
 
 section {
 	padding-top: 50px !important;
+	padding-bottom: 50px !important;
 }
+
+
 
 .carousel {
 	height: 100%;
@@ -168,7 +171,7 @@ video {
 	font-size: 9px;
 	font-weight: 100;
 	z-index: 1;
-	background-color: #44074c;
+	background-color: #9b30e8;
 	opacity: 0;
 	width: 15vw;
 	top: 5px;
@@ -221,151 +224,43 @@ video {
 	opacity: .97;
 }
 
-.timeline {
-	list-style: none;
-	padding: 20px 0 20px;
-	position: relative;
-}
 
-.timeline:before {
-	top: 0;
-	bottom: 0;
-	position: absolute;
-	content: " ";
-	width: 3px;
-	background-color: #fff;
-	left: 50%;
-	margin-left: -1.5px
-}
 
-.timeline > li {
-	margin-bottom: 20px;
-	position: relative;
-}
-
-.timeline > li:after,
-.timeline > li:before {
-	content: " ";
-	display: table;
-}
-
-.timeline > li:after {
-	clear: both;
-}
-
-.timeline > li:after,
-.timeline > li:before {
-	content: " ";
-	display: table;
-}
-
-.timeline > li:after {
-	clear: both;
-}
-
-.timeline > li > .timeline-panel {
-	width: 46%;
-	float: left;
-	border-radius: 2px;
-	padding: 20px;
-	position: relative;
-	background-color: rgba(155, 48, 232, 0);
-	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, .175);
-	box-shadow: 0 1px 6px rgba(0, 0, 0, .175);
-	cursor: pointer;
+.schedule-section {
+	background-color: #d9cddb;
 
 }
 
-.timeline > li > .timeline-panel:hover {
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
+.time-container {
+	border-left: 1px solid #44074c;
+	margin-bottom: 50px;
+	margin-left: 30px;
+	height: 200px;
 }
 
-.timeline-panel:active {
-	background-color: rgba(155, 48, 232, 1);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-}
 
-.timeline > li > .timeline-badge {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	font-size: 1.4em;
-	text-align: center;
-	position: absolute;
-	top: 16px;
-	left: 50%;
-	margin-left: -25px;
-	background-color: #9b30e8;
-	z-index: 100;
-	border-top-right-radius: 50%;
-	border-top-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	border-bottom-left-radius: 50%;
-}
 
-.timeline > li.timeline-inverted > .timeline-panel {
-	float: right;
-}
 
-.timeline > li.timeline-inverted > .timeline-panel:before {
-	border-left-width: 0;
-	border-right-width: 15px;
-	left: -15px;
-	right: auto;
-}
+.time-container p {
 
-.timeline > li.timeline-inverted > .timeline-panel:after {
-	border-left-width: 0;
-	border-right-width: 14px;
-	left: -14px;
-	right: auto;
-}
 
-.timeline-title {
-	margin-top: 0;
-	color: #ece6ed;
-	font-weight: 500;
-}
-
-.timeline-body > p,
-.timeline-body > ul {
-	margin-bottom: 0;
-	font-weight: 500;
-	color: #ece6ed;
-}
-
-.timeline-body > p + p {
-	margin-top: 5px;
-}
-
-.scaled {
-	-webkit-transform: scale(.5);
-	transform: scale(.5);
-	white-space: nowrap;
-	margin-top: -332px;
-	margin-left: 15px;
-}
-
-.timeline-wrapper {
 	display: inline-block;
-	font-family: Montserrat, sans-serif;
-	width: 70%;
-	margin-left: 174px;
+	white-space: nowrap;
+	text-align: left;
+
+
 }
 
-.timeline-section {
-	margin-top: 40px;
-	padding-top: 8px;
-	width: 100vw;
-	height: auto;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .5))), url(../img/schedule.jpg);
-	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/schedule.jpg);
-	background-size: contain, cover;
-	background-repeat: no-repeat;
-	width: 100vw;
-	height: auto;
+.time-container h4 {
+	border-bottom: 1px solid #44074c;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 16px;
+}
+
+.show-flex {
+	max-width: 250px !important;
+
 }
 
 .form {
@@ -560,13 +455,6 @@ textarea {
 
 
 
-.time-title {
-	font-weight: 400px;
-	font-size: 40px;
-	letter-spacing: 2px;
-	font-family: Montserrat, sans-serif;
-	color: #fff;
-}
 
 .container.gallery-container {
 	background-color: rgba(255, 255, 255, 0);
@@ -721,9 +609,6 @@ textarea {
 	margin-bottom: 4px;
 }
 
-.text-muted {
-	color: #d9cddb !important;
-}
 
 .contact-icon {
 	color: #44074c;
@@ -744,11 +629,7 @@ textarea {
 	-webkit-filter: blur(5px) brightness(.5);
 }
 
-.logo-alt {
-	width: 180vh;
-	height: auto;
-	display: none;
-}
+
 
 a.link-text {
 	font-weight: 400;
@@ -758,14 +639,6 @@ a.link-text {
 a.link-text:hover {
 	color: #46D44E!important;
 
-}
-
-.schedule-title {
-	font-family: Montserrat, sans-serif;
-	font-weight: 600;
-	letter-spacing: 3px;
-	color: #fff;
-	margin-bottom: 48px;
 }
 
 .btn-outline-white {
