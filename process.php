@@ -22,7 +22,7 @@ registrant_org varchar(255) NOT NULL,
 PRIMARY KEY (registrant_id));
 
 INSERT INTO registrants( registrant_fname, registrant_lname, registrant_email, registrant_org) values ('$fname2', '$lname2','$email2', '$org2'));")//Insert Query
-echo "Form submitted succesfully.";
+
 }
 
 
