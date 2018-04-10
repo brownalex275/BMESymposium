@@ -11,9 +11,9 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="12th Annual BME Symposium">
 	<meta name="twitter:description" content="12th Annual BME Symposium for the UNC/NCSU Joint Department of Biomedical Engineering">
-	<meta name="twitter:image" content="https://imagebin.ca/v/3xd2cglYL1jj">
+	<meta name="twitter:image" content="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337586/splash.png">
 	<meta property="og:title" content="12th Annual BME Symposium" />
-	<meta property="og:image" content="/img/big-image.png" />
+	<meta property="og:image" content="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337586/splash.png" />
 	<meta property="og:url" content="https://bmesymposium.com/" />
 	<meta property="og:site_name" content="BME Symposium" />
 	<meta property="og:description" content="12th Annual BME Symposium for the UNC/NCSU Joint Department of Biomedical Engineering" />
@@ -24,22 +24,22 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
 	<link href="css/mdb.min.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/media.min.css">
+	<link href="css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600" rel="stylesheet">
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="css/baguetteBox.min.css">
-	<link rel="stylesheet" href="css/media.min.css">
 </head>
 
 <body>
-
+	<div class="loader"></div>
 	<!-- Navbar -->
 	<nav class="navbar fixed-top navbar-light scrolling-navbar">
 		<div class="container">
 
 			<!-- Brand -->
 			<a class="navbar-brand" href="#about">
-			<img class="logo" src=" img/logo-small.png ">
+			<img class="logo" src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337691/logo-small.png">
 			  </a>
 			<!-- Collapse -->
 			<button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,7 @@
 		</div>
 	</nav>
 	<!-- Navbar -->
-
+	<button id="myBtn"><i class="fa fa-chevron-up"></i></button>
 	<!--Carousel Wrapper-->
 	<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel ">
 
@@ -104,11 +104,7 @@
 				<div class="view ">
 
 					<!--Video source-->
-					<video autoplay loop>
-			<source src="img/splash.mp4" type="video/mp4 " />
-			<img src="img/splash.png"/>
-		  </video>
-
+					<video poster="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523340060/poster.png" autoplay loop></video>
 					<!-- Mask & flexbox options-->
 					<div class="mask rgba-white-light d-flex justify-content-center align-items-center ">
 
@@ -142,7 +138,7 @@
 
 				<!--Section: Main info-->
 
-				<h3 class="text-center sectionTitle ">ABOUT THE SYMPOSIUM</h3>
+				<h3 id="aboutTitle" class="text-center">ABOUT THE SYMPOSIUM</h3>
 
 				<!--Grid row-->
 				<div class="row wow fadeIn  ">
@@ -231,7 +227,7 @@
 				<div class="row ">
 					<div class="col-md-5 col-md-offset-7 ">
 						<div class="venue-info ">
-							<p class="venue-title ">Venue</p>
+							<p id="venue-title">Venue</p>
 							<p class="venue-more">Durham Convention Center</p>
 							<p class="move-this">The Durham Convention Center is located in the heart of the City Center District of Downtown Durham. It is a premier location for events, meetings, and conventions. The Durham Convention Center Complex includes the Durham Arts Center, Durham Armory, Carolina Theater, and the connected Durham Mariott City Center.</p>
 
@@ -247,7 +243,7 @@
 
 		</section>
 		<section id="team-box">
-			<h3 class="text-center sectionTitle add-this">PRESENTING TEAMS</h3>
+			<h3 id="presentTitle" class="text-center ">PRESENTING TEAMS</h3>
 			<h3 class="text-center about-title ">TBA</h3>
 			<!--
 			<div class="container gallery-container2 ">
@@ -332,7 +328,7 @@
 		</section>
 		<section>
 
-			<h2 class="text-center sectionTitle ">OUR SPEAKERS</h2>
+			<h3 id="speakersTitle" class="text-center ">OUR SPEAKERS</h3>
 
 			<div class="container speaker ">
 				<div class="row ">
@@ -343,7 +339,7 @@
 								<div class="speaker-ok">Associate Professor</div>
 								<div class="speaker-about">Dr. Lalush's current research interest is in simultaneous PET and MR imaging, especially with respect to MRI-guided correction of the PET image for attenuation and deformable motion. He also collaborates with clinical scientists to develop new applications for PET/MR in cancer and neuroscience.</div>
 							</div>
-							<img src="img/lalush.png" class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337690/lalush.png" class="img-fluid">
 
 						</div>
 						<h3 class="text-center speaker-name ">David Lalush, PhD</h3>
@@ -356,7 +352,7 @@
 								<div class="speaker-ok">Director of Undergraduate Studies</div>
 								<div class="speaker-about">Dr. Cartee is one of the main drivers in the formation of the joint department between NC State and UNC-Chapel Hill. As Director of Undergraduate Studies, Dr. Cartee was one of the primary faculty responsible for the program's ABET accreditation in August 2017.</div>
 							</div>
-							<img src="img/cartee.png" class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337686/cartee.png" class="img-fluid">
 
 						</div>
 						<h3 class="text-center speaker-name ">Lianne Cartee, PhD</h3>
@@ -370,7 +366,7 @@
 								<div class="speaker-ok ">Associate Professor of the Practice</div>
 								<div class="speaker-about ">Dr. Dimeo currently leads the Biomedical Engineering Senior Design Program at NCSU. Dr. DiMeo is a founder of Novocor Medical Systems and a founding board member of Augment Medical.</div>
 							</div>
-							<img src="img/dimeo.png " class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337688/dimeo.png" class="img-fluid">
 
 						</div>
 						<h3 class="text-center speaker-name ">Andrew DiMeo, PhD</h3>
@@ -382,7 +378,7 @@
 								<div class="speaker-ok ">Lecturer</div>
 								<div class="speaker-about ">Dr. Hubbard currently leads the Biomedical Engineering Senior Design Program at UNC. His research primarily focuses on using color and feature recognition in both 2D and 3D to create quantitative assessments of dermal wounds in clinical settings. </div>
 							</div>
-							<img src="img/hubbard.png " class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337690/hubbard.png" class="img-fluid">
 						</div>
 						<h3 class="text-center speaker-name ">Devin Hubbard, PhD</h3>
 					</div>
@@ -397,13 +393,13 @@
 
 		<!--Section: Main info-->
 		<section class="schedule-section ">
-			<h2 class="text-center sectionTitle">SCHEDULE</h2>
+			<h3 id="scheduleTitle" class="text-center ">SCHEDULE</h3>
 			<div class="container">
 				<div class="row">
 					<div class="time-container">
 						<div class="col-md-3 show-flex">
 							<h4>Welcome</h4>
-							<p>Dr. Andrew DiMeo</p>
+							<p class="feature-speaker">Dr. Andrew DiMeo</p>
 							<br/>
 							<time>2:00 PM - 2:15 PM</time>
 						</div>
@@ -424,13 +420,14 @@
 					<div class="time-container">
 						<div class="col-md-3 show-flex">
 							<h4>Networking &amp; Dinner</h4>
+							<br/>
 							<p>6:30 PM - 7:15 PM</p>
 						</div>
 					</div>
 					<div class="time-container">
 						<div class="col-md-3 show-flex">
 							<h4>Keynote Speaker</h4>
-							<p>Dr. David Lalush</p>
+							<p class="feature-speaker">Dr. David Lalush</p>
 							<br/>
 							<time>7:15 PM - 7:30 PM</time>
 						</div>
@@ -444,7 +441,7 @@
 					<div class="time-container">
 						<div class="col-md-3 show-flex">
 							<h4>Joint Department Speaker</h4>
-							<p>Dr. Lianne Cartee</p>
+							<p class="feature-speaker">Dr. Lianne Cartee</p>
 							<br/>
 							<time>8:00 PM - 8:15 PM</time>
 						</div>
@@ -452,7 +449,7 @@
 					<div class="time-container">
 						<div class="col-md-3 show-flex">
 							<h4>Closing Remarks</h4>
-							<p>Dr. Devin Hubbard</p>
+							<p class="feature-speaker">Dr. Devin Hubbard</p>
 							<br/>
 							<time>8:15 - 8:30 PM</time>
 						</div>
@@ -462,40 +459,87 @@
 		</section>
 
 		<section class="sponsor-mobile ">
-			<h3 class="text-center sectionTitle personal-space ">SPONSORS</h3>
+			<h3 id="sponsorTitle" class="text-center  personal-space ">SPONSORS</h3>
 			<h3 class="text-center about-title ">TBA</h3>
 		</section>
 
 		<section class="photos ">
-			<h3 class="text-center sectionTitle ">PHOTO GALLERY</h3>
+			<h3 id="photoTitle" class="text-center sectionTitle ">PHOTO GALLERY</h3>
 			<h3 class="text-center about-title no-margin ">COMING SOON!</h3>
-			<!--<div class="container ">
-		<div class="row ">
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
+			<!--<div class="row move-left">
+				<div class="col-md-12">
 
-		</div>
-		<div class="row ">
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
-			<div class="col-md-3 col-sm-4 col-xs-6 "><img class="img-responsive " src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg " /></div>
-		</div>
-	</div> -->
+					<div id="mdb-lightbox-ui"></div>
+
+					<div class="mdb-lightbox">
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(145).jpg" class="img-fluid">
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+						<figure class="col-md-4">
+							<a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg" data-size="1600x1067">
+									<img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg" class="img-fluid" />
+								</a>
+						</figure>
+
+					</div>
+
+				</div>
+			</div> -->
+
 			<div id="register"></div>
 		</section>
 
 		<section id="registrationSection">
 
 			<div class="form ">
-
-
 				<div class="tab-content ">
 					<div id="signup ">
-						<h1 class="registration-title">Symposium Registration</h1>
-
 						<form action="/ " method="post ">
 
 							<div class="top-row ">
@@ -528,7 +572,7 @@
 								<input id="org" type="password " required autocomplete="off " />
 							</div>
 
-							<button type="button" class="button button-block " onclick="submitForm() " value="submit ">Submit</button>
+							<button type="button" class="button button-block " onclick="submitForm() " value="submit ">Sign Up</button>
 
 						</form>
 
@@ -566,14 +610,20 @@
 
 			</div>
 			<!-- /form -->
+			<div class="register-message">
+				<p class="small-message">SIGN UP NOW AND RESERVE YOUR NAMETAG!</p>
+				<p class="large-message">DON'T MISS OUT</p>
+				<p class="large-message close-gap">REGISTER NOW!</p>
 
+			</div>
+			<div id="contact"></div>
 		</section>
 
 
-		<section>
-			<div id="contact"></div>
-			<h2 class="text-center sectionTitle ">Contact</h2>
-			<h2 class="about-title text-center ">
+		<section class="contact-color">
+
+			<h3 id="contactTitle" class="text-center  ">CONTACT</h3>
+			<h2 class="contact-info text-center ">
 				Philips Hall, Room 35
 				<br> E Cameron Ave
 				<br> Chapel Hill, NC 27514
@@ -582,11 +632,13 @@
 				<div class="row ">
 					<div class="col-md-6 col-offset-3 text-center no-gutter about-title ">
 						<i class="fa fa-envelope contact-icon "></i>
-						<br> TBA
+						<br>
+						<div class="contact-info">TBA</div>
 					</div>
 					<div class="col-md-6 col-offset-3 text-center no-gutter about-title ">
 						<i class="fa fa-phone contact-icon "></i>
-						<br> TBA
+						<br>
+						<div class="contact-info">TBA</div>
 					</div>
 				</div>
 			</div>
@@ -622,7 +674,7 @@
 		</div>
 		<hr class="my-4 ">
 
-		<h2 class="share-title text-center "> Share this event!</h2>
+		<h2 class="share-title text-center "> SHARE THIS EVENT!</h2>
 
 
 		<div class="pb-4 ">

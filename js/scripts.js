@@ -1,3 +1,13 @@
+$(window).on('load', function () {
+	// Animate loader off screen
+	$(".loader").fadeOut("slow");;
+});
+
+window.onload = function () {
+	if ( /* conditions */ window.innerWidth > 480)
+		document.querySelector("video").src = "https://res.cloudinary.com/dx8q9ssty/video/upload/v1523339931/video.mp4";
+};
+
 $('a[href^="#"]').on('click', function (event) {
 	var target = $(this.getAttribute('href'));
 	if (target.length) {
@@ -7,6 +17,29 @@ $('a[href^="#"]').on('click', function (event) {
 		}, 1000);
 	}
 });
+
+$(window).scroll(function () {
+	if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+		$('#myBtn').fadeIn('fast'); // Fade in the arrow
+	} else {
+		$('#myBtn').fadeOut('fast'); // Else fade out the arrow
+	}
+});
+
+$('#myBtn').click(function () { // When arrow is clicked
+	$('body,html').animate({
+		scrollTop: 0 // Scroll to top of body
+	}, 500);
+});
+
+$('.navbar-nav>li>a').on('click', function () {
+	$('.navbar-collapse').collapse('hide');
+});
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	document.body.scrollTop = 0; // For Safari
+	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 function submitForm() {
 	var fname = document.getElementById("fname").value;
@@ -50,4 +83,8 @@ $('#email').focusin(function () {
 
 $('#org').focusin(function () {
 	$("#olabel").hide();
+});
+
+$(function () {
+	$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 });

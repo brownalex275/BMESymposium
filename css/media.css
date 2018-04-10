@@ -1,13 +1,7 @@
-
-
 @media (max-width: 1024px) {
 
 	.navbar {
 		background-color: rgba(255, 255, 255, 1);
-	}
-
-	.scaled {
-		margin-left: -20px;
 	}
 
 	.speaker-text {
@@ -17,12 +11,41 @@
 	.speaker-name {
 		margin-left: 0;
 	}
-	.timeline > li > .timeline-panel {
-		width: 50%;
-	}
 
 	.col-mobile {
 		margin-right: 22px;
+	}
+
+
+
+
+	.register-message {
+
+		margin-top: -450px;
+		margin-left: 640px;
+		-webkit-transform: scale(0);
+		transform: scale(0.9);
+	}
+
+
+
+	.close-gap {
+		margin-top: -30px;
+	}
+
+	.form {
+
+		-webkit-transform: scale(.9);
+		transform: scale(.9);
+		margin-top: 200px;
+
+
+
+
+
+
+
+
 	}
 }
 
@@ -36,10 +59,7 @@
 	}
 
 
-	.scaled {
-		margin-left: -105px;
 
-	}
 
 	.speaker-text {
 		width: 19vw;
@@ -47,13 +67,33 @@
 		margin-left: -3px;
 
 
+
+	}
+
+	.register-message {
+
+		margin-top: -700px;
+		margin-left: 90px;
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
 	}
 
 
-	.timeline-title {
-		font-size: 15px;
+
+	.close-gap {
+		margin-top: -30px;
 	}
 
+	.form {
+
+		-webkit-transform: scale(.4);
+		transform: scale(.9);
+		margin-top: 200px;
+
+
+
+
+	}
 
 
 	.img-mobile {
@@ -74,21 +114,9 @@
 
 	}
 
-	.schedule-title {
-		margin-bottom: 70px;
-	}
 }
 
 @media (max-width: 425px) {
-	.timeline > li > .timeline-panel {
-		width: 70%;
-		margin-left: -100px;
-	}
-
-	.inverted-panel {
-		margin-right: -100px;
-	}
-
 	.speaker-text {
 		width: 45vw;
 		font-size: 9px;
@@ -97,8 +125,41 @@
 
 	}
 
+	.register-message {
+
+		margin-top: -620px;
+		margin-left: -30px;
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+		white-space: nowrap;
+
+	}
+
+
+	label {
+		white-space: nowrap;
+		-webkit-transform: scale(0.7);
+		transform: scale(0.7);
+		margin-left: -30px;
+		margin-top: 10px;
+	}
+
+	.form {
+
+		-webkit-transform: scale(.8);
+		transform: scale(.8);
+		margin-top: 100px;
+	}
+
+
+
 
 }
+
+
+
+
+
 
 @media (max-width: 375px) {
 	.venue-info {
@@ -115,7 +176,24 @@
 
 
 	}
+
+	.register-message {
+
+
+		margin-left: -60px;
+	}
+
+
+	label {
+		white-space: nowrap;
+		-webkit-transform: scale(0.5);
+		transform: scale(0.5);
+		margin-left: -40px;
+		margin-top: 10px;
+	}
+
 }
+
 
 
 
