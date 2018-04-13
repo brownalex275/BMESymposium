@@ -110,6 +110,10 @@
 }
 
 @media (max-width: 425px) {
+
+	body {
+		padding-top: 60px;
+	}
 	.speaker-text {
 		width: 45vw;
 		font-size: 9px;
@@ -187,9 +191,9 @@
 
 	#myBtn i {
 
-	right:2px;
+		right: 2px;
 
-}
+	}
 
 }
 
