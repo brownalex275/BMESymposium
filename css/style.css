@@ -172,6 +172,11 @@ video {
 
 }
 
+.about-words {
+	font-size: 14px;
+
+}
+
 #registrationTitle {
 	font-family: Montserrat, sans-serif;
 	font-weight: 600;
@@ -369,7 +374,7 @@ video {
 }
 
 .show-flex {
-	max-width: 250px !important;
+	max-width: 400px !important;
 
 }
 
@@ -385,16 +390,57 @@ video {
 	font-size: 15px !important;
 }
 
-.show-flex time {
-	color: #5b325b;
-	font-weight: 100;
-	font-size: 12px;
-}
 
 .show-flex p {
 	color: #5b325b;
 	font-weight: 100;
 	font-size: 12px;
+}
+
+
+section.schedule-section > div > div > div:nth-child(1) {
+	margin-left: 42px;
+}
+
+section.schedule-section > div > div > div:nth-child(2) {
+	margin-left: 95px;
+}
+
+section.schedule-section > div > div > div:nth-child(4) {
+	margin-left: 126px;
+}
+
+
+section.schedule-section > div > div > div:nth-child(5) {
+	margin-left: 42px;
+}
+
+
+section.schedule-section > div > div > div:nth-child(6) {
+	margin-left: 5px;
+}
+
+
+section.schedule-section > div > div > div:nth-child(7) {
+	margin-left: 135px;
+}
+
+
+section.schedule-section > div > div > div:nth-child(8) {
+	margin-left: 60px;
+}
+
+section.schedule-section > div > div > div:nth-child(9) {
+	margin-left: 40px;
+}
+
+section.schedule-section > div > div > div:nth-child(10) {
+	margin-left: 130px;
+}
+
+
+section.schedule-section > div > div > div:nth-child(11) {
+	margin-left: 20px;
 }
 
 #venue-title {
