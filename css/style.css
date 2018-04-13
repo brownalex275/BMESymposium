@@ -362,6 +362,7 @@ video {
 	display: inline-block;
 	white-space: nowrap;
 	text-align: left;
+	font-weight: 300;
 
 
 }
