@@ -246,15 +246,25 @@
 
 	section.schedule-section > div > div > div:nth-child(1) {
 		margin-left: 0px;
+		margin-right: 20px;
+	}
+
+
+	section.schedule-section > div > div > div:nth-child(2) {
+		margin-left: 0px;
+		margin-right: 20px;
+
 	}
 
 	section.schedule-section > div > div > div:nth-child(3) {
 		margin-left: 0px;
+		margin-right: 130px;
 	}
 
 
 	section.schedule-section > div > div > div:nth-child(4) {
-		margin-left: 15px;
+		margin-left: 0px;
+		margin-right: 30px;
 	}
 
 
@@ -266,20 +276,23 @@
 
 	section.schedule-section > div > div > div:nth-child(6) {
 		margin-left: 0px;
+		margin-right: 30px;
 	}
 
 
 	section.schedule-section > div > div > div:nth-child(7) {
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 
 
 	section.schedule-section > div > div > div:nth-child(8) {
 		margin-left: 0px;
+		margin-right: 100px;
 	}
 
 	section.schedule-section > div > div > div:nth-child(9) {
-		margin-left: -8px;
+		margin-left: 0px;
+		margin-right: 40px;
 	}
 
 	section.schedule-section > div > div > div:nth-child(10) {
@@ -342,6 +355,30 @@
 	section.schedule-section > div > div > div:nth-child(2) {
 		margin-left: 0px;
 	}
+
+	section.schedule-section > div > div > div:nth-child(3) {
+		margin-right: 60px;
+		margin-left: 0px;
+	}
+
+	section.schedule-section > div > div > div:nth-child(4) {
+		margin-right: 60px;
+		margin-left: 0px;
+	}
+
+	section.schedule-section > div > div > div:nth-child(7) {
+		margin-left: 0px;
+	}
+
+	section.schedule-section > div > div > div:nth-child(8) {
+		margin-right: 60px;
+	}
+
+	section.schedule-section > div > div > div:nth-child(9) {
+		margin-left: 0px;
+	}
+
+
 	section.photos img {
 		max-width: 350px;
 		max-height: 350px;
@@ -380,6 +417,21 @@
 	section.schedule-section > div > div > div:nth-child(3) {
 		margin-right: 2px;
 	}
+
+	section.schedule-section > div > div > div:nth-child(4) {
+		margin-left: 0px;
+	}
+
+
+	section.schedule-section > div > div > div:nth-child(7) {
+		margin-left: 0px;
+	}
+
+
+	section.schedule-section > div > div > div:nth-child(9) {
+		margin-left: 0px;
+	}
+
 
 
 	.register-message {
