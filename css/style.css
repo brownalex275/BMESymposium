@@ -62,6 +62,7 @@ section {
 .logo-big {
 	width: 100vw;
 	height: auto;
+
 }
 
 .rgba-white-light {
@@ -70,8 +71,9 @@ section {
 
 video {
 	max-width: 100%;
-	height: auto;
+
 }
+
 
 
 .navbar {
@@ -945,7 +947,40 @@ textarea {
 
 }
 
+section.photos {
+	padding-left: 37px;
+}
 
+section.photos img {
+	max-width: 400px;
+	max-height: 400px;
+}
+
+section.photos > a:nth-child(4) > img {
+	margin-top: 90px;
+	padding-bottom: 40px;
+
+
+}
+
+section.photos > a:nth-child(7) > img {}
+
+
+
+section.photos > a:nth-child(10) > img {
+	margin-top: 100px;
+}
+
+section.photos > a:nth-child(13) > img {
+	margin-top: 90px;
+}
+
+.lb-outerContainer,
+.lb-dataContainer {
+	max-width: 420px;
+	width: auto!important;
+	height: auto!important;
+}
 
 
 .contact-icon {
