@@ -1023,6 +1023,7 @@ section.photos > a:nth-child(13) > img {
 .lb-dataContainer {
 	max-width: 420px;
 	height: auto!important;
+	width: auto !important;
 }
 
 
