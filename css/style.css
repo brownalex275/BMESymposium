@@ -1018,12 +1018,13 @@ section.photos > a:nth-child(13) > img {
 	margin-top: 90px;
 }
 
+
 .lb-outerContainer,
 .lb-dataContainer {
 	max-width: 420px;
-	width: auto!important;
 	height: auto!important;
 }
+
 
 
 .contact-icon {
