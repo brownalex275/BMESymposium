@@ -20,18 +20,1357 @@
 	<title>BME Symposium</title>
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		html {
+			overflow-y: scroll
+		}
+
+		body {
+			overflow: hidden
+		}
+
+		.view,
+		body,
+		html {
+			background-color: #fff;
+			color: #303!important;
+			font-family: Montserrat, sans-serif
+		}
+
+		.carousel {
+			height: 100%
+		}
+
+		.carousel .carousel-inner {
+			height: 100%
+		}
+
+		.carousel .carousel-inner .active,
+		.carousel .carousel-inner .carousel-item {
+			height: 100%
+		}
+
+		video {
+			max-width: 100%;
+			background-image: url('https://res.cloudinary.com/dx8q9ssty/image/upload/v1523742958/Candids/splashfix.png')
+		}
+
+		.logo-big {
+			width: 100vw;
+			height: auto
+		}
+
+		.rgba-white-light {
+			background-color: rgba(255, 255, 255, .56) !important
+		}
+
+		:root {
+			--blue: #007bff;
+			--indigo: #6610f2;
+			--purple: #6f42c1;
+			--pink: #e83e8c;
+			--red: #dc3545;
+			--orange: #fd7e14;
+			--yellow: #ffc107;
+			--green: #28a745;
+			--teal: #20c997;
+			--cyan: #17a2b8;
+			--white: #fff;
+			--gray: #6c757d;
+			--gray-dark: #343a40;
+			--primary: #007bff;
+			--secondary: #6c757d;
+			--success: #28a745;
+			--info: #17a2b8;
+			--warning: #ffc107;
+			--danger: #dc3545;
+			--light: #f8f9fa;
+			--dark: #343a40;
+			--breakpoint-xs: 0;
+			--breakpoint-sm: 576px;
+			--breakpoint-md: 768px;
+			--breakpoint-lg: 992px;
+			--breakpoint-xl: 1200px;
+			--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+		}
+
+		*,
+		::after,
+		::before {
+			box-sizing: border-box
+		}
+
+		html {
+			font-family: sans-serif;
+			line-height: 1.15;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			-ms-overflow-style: scrollbar
+		}
+
+		@-ms-viewport {
+			width: device-width
+		}
+
+		main,
+		nav,
+		section {
+			display: block
+		}
+
+		body {
+			margin: 0;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			color: #212529;
+			text-align: left;
+			background-color: #fff
+		}
+
+		h1,
+		h3,
+		h5 {
+			margin-top: 0;
+			margin-bottom: .5rem
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 1rem
+		}
+
+		ol,
+		ul {
+			margin-top: 0;
+			margin-bottom: 1rem
+		}
+
+		a {
+			color: #007bff;
+			text-decoration: none;
+			background-color: transparent;
+			-webkit-text-decoration-skip: objects
+		}
+
+		img {
+			vertical-align: middle;
+			border-style: none
+		}
+
+		label {
+			display: inline-block;
+			margin-bottom: .5rem
+		}
+
+		button {
+			border-radius: 0
+		}
+
+		button,
+		input {
+			margin: 0;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit
+		}
+
+		button,
+		input {
+			overflow: visible
+		}
+
+		button {
+			text-transform: none
+		}
+
+		button {
+			-webkit-appearance: button
+		}
+
+		button::-moz-focus-inner {
+			padding: 0;
+			border-style: none
+		}
+
+		::-webkit-file-upload-button {
+			font: inherit;
+			-webkit-appearance: button
+		}
+
+		h1,
+		h3,
+		h5 {
+			margin-bottom: .5rem;
+			font-family: inherit;
+			font-weight: 500;
+			line-height: 1.2;
+			color: inherit
+		}
+
+		h1 {
+			font-size: 2.5rem
+		}
+
+		h3 {
+			font-size: 1.75rem
+		}
+
+		h5 {
+			font-size: 1.25rem
+		}
+
+		.container {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto
+		}
+
+		@media (min-width:576px) {
+			.container {
+				max-width: 540px
+			}
+		}
+
+		@media (min-width:768px) {
+			.container {
+				max-width: 720px
+			}
+		}
+
+		@media (min-width:992px) {
+			.container {
+				max-width: 960px
+			}
+		}
+
+		@media (min-width:1200px) {
+			.container {
+				max-width: 1140px
+			}
+		}
+
+		.row {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-right: -15px;
+			margin-left: -15px
+		}
+
+		.col-lg-6,
+		.col-md-1,
+		.col-md-12,
+		.col-md-4 {
+			position: relative;
+			width: 100%;
+			min-height: 1px;
+			padding-right: 15px;
+			padding-left: 15px
+		}
+
+		@media (min-width:768px) {
+			.col-md-1 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 8.333333%;
+				flex: 0 0 8.333333%;
+				max-width: 8.333333%
+			}
+			.col-md-4 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 33.333333%;
+				flex: 0 0 33.333333%;
+				max-width: 33.333333%
+			}
+			.col-md-12 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+		}
+
+		@media (min-width:992px) {
+			.col-lg-6 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+				max-width: 50%
+			}
+		}
+
+		.collapse {
+			display: none
+		}
+
+		.nav-link {
+			display: block;
+			padding: .5rem 1rem
+		}
+
+		.navbar {
+			position: relative;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			padding: .5rem 1rem
+		}
+
+		.navbar>.container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between
+		}
+
+		.navbar-brand {
+			display: inline-block;
+			padding-top: .3125rem;
+			padding-bottom: .3125rem;
+			margin-right: 1rem;
+			font-size: 1.25rem;
+			line-height: inherit;
+			white-space: nowrap
+		}
+
+		.navbar-nav {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style: none
+		}
+
+		.navbar-nav .nav-link {
+			padding-right: 0;
+			padding-left: 0
+		}
+
+		.navbar-collapse {
+			-ms-flex-preferred-size: 100%;
+			flex-basis: 100%;
+			-webkit-box-flex: 1;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+		}
+
+		.navbar-toggler {
+			padding: .25rem .75rem;
+			font-size: 1.25rem;
+			line-height: 1;
+			background-color: transparent;
+			border: 1px solid transparent;
+			border-radius: .25rem
+		}
+
+		.navbar-toggler-icon {
+			display: inline-block;
+			width: 1.5em;
+			height: 1.5em;
+			vertical-align: middle;
+			content: "";
+			background: no-repeat center center;
+			background-size: 100% 100%
+		}
+
+		.navbar-light .navbar-brand {
+			color: rgba(0, 0, 0, .9)
+		}
+
+		.navbar-light .navbar-nav .nav-link {
+			color: rgba(0, 0, 0, .5)
+		}
+
+		.navbar-light .navbar-toggler {
+			color: rgba(0, 0, 0, .5);
+			border-color: rgba(0, 0, 0, .1)
+		}
+
+		.navbar-light .navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+		}
+
+		.carousel {
+			position: relative
+		}
+
+		.carousel-inner {
+			position: relative;
+			width: 100%;
+			overflow: hidden
+		}
+
+		.carousel-item {
+			position: relative;
+			display: none;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			width: 100%;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-webkit-perspective: 1000px;
+			perspective: 1000px
+		}
+
+		.carousel-item.active {
+			display: block
+		}
+
+		.carousel-indicators {
+			position: absolute;
+			right: 0;
+			bottom: 10px;
+			left: 0;
+			z-index: 15;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			padding-left: 0;
+			margin-right: 15%;
+			margin-left: 15%;
+			list-style: none
+		}
+
+		.d-flex {
+			display: -webkit-box!important;
+			display: -ms-flexbox!important;
+			display: flex!important
+		}
+
+		.justify-content-center {
+			-webkit-box-pack: center!important;
+			-ms-flex-pack: center!important;
+			justify-content: center!important
+		}
+
+		.align-items-center {
+			-webkit-box-align: center!important;
+			-ms-flex-align: center!important;
+			align-items: center!important
+		}
+
+		.fixed-top {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 1030
+		}
+
+		.mr-3 {
+			margin-right: 1rem!important
+		}
+
+		.mx-5 {
+			margin-right: 3rem!important
+		}
+
+		.mx-5 {
+			margin-left: 3rem!important
+		}
+
+		.px-4 {
+			padding-right: 1.5rem!important
+		}
+
+		.px-4 {
+			padding-left: 1.5rem!important
+		}
+
+		.ml-auto {
+			margin-left: auto!important
+		}
+
+		.text-center {
+			text-align: center!important
+		}
+
+		:root {
+			--blue: #007bff;
+			--indigo: #6610f2;
+			--purple: #6f42c1;
+			--pink: #e83e8c;
+			--red: #dc3545;
+			--orange: #fd7e14;
+			--yellow: #ffc107;
+			--green: #28a745;
+			--teal: #20c997;
+			--cyan: #17a2b8;
+			--white: #fff;
+			--gray: #6c757d;
+			--gray-dark: #343a40;
+			--primary: #007bff;
+			--secondary: #6c757d;
+			--success: #28a745;
+			--info: #17a2b8;
+			--warning: #ffc107;
+			--danger: #dc3545;
+			--light: #f8f9fa;
+			--dark: #343a40;
+			--breakpoint-xs: 0;
+			--breakpoint-sm: 576px;
+			--breakpoint-md: 768px;
+			--breakpoint-lg: 992px;
+			--breakpoint-xl: 1200px;
+			--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+		}
+
+		*,
+		::after,
+		::before {
+			box-sizing: border-box
+		}
+
+		html {
+			font-family: sans-serif;
+			line-height: 1.15;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			-ms-overflow-style: scrollbar
+		}
+
+		@-ms-viewport {
+			width: device-width
+		}
+
+		main,
+		nav,
+		section {
+			display: block
+		}
+
+		body {
+			margin: 0;
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+			font-size: 1rem;
+			font-weight: 400;
+			line-height: 1.5;
+			color: #212529;
+			text-align: left;
+			background-color: #fff
+		}
+
+		h1,
+		h3,
+		h5 {
+			margin-top: 0;
+			margin-bottom: .5rem
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 1rem
+		}
+
+		ol,
+		ul {
+			margin-top: 0;
+			margin-bottom: 1rem
+		}
+
+		a {
+			color: #007bff;
+			text-decoration: none;
+			background-color: transparent;
+			-webkit-text-decoration-skip: objects
+		}
+
+		img {
+			vertical-align: middle;
+			border-style: none
+		}
+
+		label {
+			display: inline-block;
+			margin-bottom: .5rem
+		}
+
+		button {
+			border-radius: 0
+		}
+
+		button,
+		input {
+			margin: 0;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit
+		}
+
+		button,
+		input {
+			overflow: visible
+		}
+
+		button {
+			text-transform: none
+		}
+
+		button {
+			-webkit-appearance: button
+		}
+
+		button::-moz-focus-inner {
+			padding: 0;
+			border-style: none
+		}
+
+		::-webkit-file-upload-button {
+			font: inherit;
+			-webkit-appearance: button
+		}
+
+		h1,
+		h3,
+		h5 {
+			margin-bottom: .5rem;
+			font-family: inherit;
+			font-weight: 500;
+			line-height: 1.2;
+			color: inherit
+		}
+
+		h1 {
+			font-size: 2.5rem
+		}
+
+		h3 {
+			font-size: 1.75rem
+		}
+
+		h5 {
+			font-size: 1.25rem
+		}
+
+		.container {
+			width: 100%;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto
+		}
+
+		@media (min-width:576px) {
+			.container {
+				max-width: 540px
+			}
+		}
+
+		@media (min-width:768px) {
+			.container {
+				max-width: 720px
+			}
+		}
+
+		@media (min-width:992px) {
+			.container {
+				max-width: 960px
+			}
+		}
+
+		@media (min-width:1200px) {
+			.container {
+				max-width: 1140px
+			}
+		}
+
+		.row {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			margin-right: -15px;
+			margin-left: -15px
+		}
+
+		.col-lg-6,
+		.col-md-1,
+		.col-md-12,
+		.col-md-4 {
+			position: relative;
+			width: 100%;
+			min-height: 1px;
+			padding-right: 15px;
+			padding-left: 15px
+		}
+
+		@media (min-width:768px) {
+			.col-md-1 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 8.333333%;
+				flex: 0 0 8.333333%;
+				max-width: 8.333333%
+			}
+			.col-md-4 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 33.333333%;
+				flex: 0 0 33.333333%;
+				max-width: 33.333333%
+			}
+			.col-md-12 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 100%;
+				flex: 0 0 100%;
+				max-width: 100%
+			}
+		}
+
+		@media (min-width:992px) {
+			.col-lg-6 {
+				-webkit-box-flex: 0;
+				-ms-flex: 0 0 50%;
+				flex: 0 0 50%;
+				max-width: 50%
+			}
+		}
+
+		.collapse {
+			display: none
+		}
+
+		.nav-link {
+			display: block;
+			padding: .5rem 1rem
+		}
+
+		.navbar {
+			position: relative;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between;
+			padding: .5rem 1rem
+		}
+
+		.navbar>.container {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: justify;
+			-ms-flex-pack: justify;
+			justify-content: space-between
+		}
+
+		.navbar-brand {
+			display: inline-block;
+			padding-top: .3125rem;
+			padding-bottom: .3125rem;
+			margin-right: 1rem;
+			font-size: 1.25rem;
+			line-height: inherit;
+			white-space: nowrap
+		}
+
+		.navbar-nav {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style: none
+		}
+
+		.navbar-nav .nav-link {
+			padding-right: 0;
+			padding-left: 0
+		}
+
+		.navbar-collapse {
+			-ms-flex-preferred-size: 100%;
+			flex-basis: 100%;
+			-webkit-box-flex: 1;
+			-ms-flex-positive: 1;
+			flex-grow: 1;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center
+		}
+
+		.navbar-toggler {
+			padding: .25rem .75rem;
+			font-size: 1.25rem;
+			line-height: 1;
+			background-color: transparent;
+			border: 1px solid transparent;
+			border-radius: .25rem
+		}
+
+		.navbar-toggler-icon {
+			display: inline-block;
+			width: 1.5em;
+			height: 1.5em;
+			vertical-align: middle;
+			content: "";
+			background: no-repeat center center;
+			background-size: 100% 100%
+		}
+
+		.navbar-light .navbar-brand {
+			color: rgba(0, 0, 0, .9)
+		}
+
+		.navbar-light .navbar-nav .nav-link {
+			color: rgba(0, 0, 0, .5)
+		}
+
+		.navbar-light .navbar-toggler {
+			color: rgba(0, 0, 0, .5);
+			border-color: rgba(0, 0, 0, .1)
+		}
+
+		.navbar-light .navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
+		}
+
+		.carousel {
+			position: relative
+		}
+
+		.carousel-inner {
+			position: relative;
+			width: 100%;
+			overflow: hidden
+		}
+
+		.carousel-item {
+			position: relative;
+			display: none;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			width: 100%;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-webkit-perspective: 1000px;
+			perspective: 1000px
+		}
+
+		.carousel-item.active {
+			display: block
+		}
+
+		.carousel-indicators {
+			position: absolute;
+			right: 0;
+			bottom: 10px;
+			left: 0;
+			z-index: 15;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			padding-left: 0;
+			margin-right: 15%;
+			margin-left: 15%;
+			list-style: none
+		}
+
+		.d-flex {
+			display: -webkit-box!important;
+			display: -ms-flexbox!important;
+			display: flex!important
+		}
+
+		.justify-content-center {
+			-webkit-box-pack: center!important;
+			-ms-flex-pack: center!important;
+			justify-content: center!important
+		}
+
+		.align-items-center {
+			-webkit-box-align: center!important;
+			-ms-flex-align: center!important;
+			align-items: center!important
+		}
+
+		.fixed-top {
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 1030
+		}
+
+		.mr-3 {
+			margin-right: 1rem!important
+		}
+
+		.mx-5 {
+			margin-right: 3rem!important
+		}
+
+		.mx-5 {
+			margin-left: 3rem!important
+		}
+
+		.px-4 {
+			padding-right: 1.5rem!important
+		}
+
+		.px-4 {
+			padding-left: 1.5rem!important
+		}
+
+		.ml-auto {
+			margin-left: auto!important
+		}
+
+		.text-center {
+			text-align: center!important
+		}
+
+		.indigo-text {
+			color: #3f51b5!important
+		}
+
+		.blue-text {
+			color: #2196f3!important
+		}
+
+		.rgba-white-light {
+			background-color: rgba(255, 255, 255, .3)
+		}
+
+		.navbar {
+			box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12)
+		}
+
+		a {
+			text-decoration: none;
+			color: #0275d8
+		}
+
+		@font-face {
+			font-family: Roboto;
+			src: local(Roboto Thin), url(../font/roboto/Roboto-Thin.eot);
+			src: url(../font/roboto/Roboto-Thin.eot?#iefix) format("embedded-opentype"), url(../font/roboto/Roboto-Thin.woff2) format("woff2"), url(../font/roboto/Roboto-Thin.woff) format("woff"), url(../font/roboto/Roboto-Thin.ttf) format("truetype");
+			font-weight: 200
+		}
+
+		@font-face {
+			font-family: Roboto;
+			src: local(Roboto Light), url(../font/roboto/Roboto-Light.eot);
+			src: url(../font/roboto/Roboto-Light.eot?#iefix) format("embedded-opentype"), url(../font/roboto/Roboto-Light.woff2) format("woff2"), url(../font/roboto/Roboto-Light.woff) format("woff"), url(../font/roboto/Roboto-Light.ttf) format("truetype");
+			font-weight: 300
+		}
+
+		@font-face {
+			font-family: Roboto;
+			src: local(Roboto Regular), url(../font/roboto/Roboto-Regular.eot);
+			src: url(../font/roboto/Roboto-Regular.eot?#iefix) format("embedded-opentype"), url(../font/roboto/Roboto-Regular.woff2) format("woff2"), url(../font/roboto/Roboto-Regular.woff) format("woff"), url(../font/roboto/Roboto-Regular.ttf) format("truetype");
+			font-weight: 400
+		}
+
+		@font-face {
+			font-family: Roboto;
+			src: url(../font/roboto/Roboto-Medium.eot);
+			src: url(../font/roboto/Roboto-Medium.eot?#iefix) format("embedded-opentype"), url(../font/roboto/Roboto-Medium.woff2) format("woff2"), url(../font/roboto/Roboto-Medium.woff) format("woff"), url(../font/roboto/Roboto-Medium.ttf) format("truetype");
+			font-weight: 500
+		}
+
+		@font-face {
+			font-family: Roboto;
+			src: url(../font/roboto/Roboto-Bold.eot);
+			src: url(../font/roboto/Roboto-Bold.eot?#iefix) format("embedded-opentype"), url(../font/roboto/Roboto-Bold.woff2) format("woff2"), url(../font/roboto/Roboto-Bold.woff) format("woff"), url(../font/roboto/Roboto-Bold.ttf) format("truetype");
+			font-weight: 700
+		}
+
+		body {
+			font-family: Roboto, sans-serif;
+			font-weight: 300
+		}
+
+		h1,
+		h3,
+		h5 {
+			font-weight: 300
+		}
+
+		.view {
+			position: relative;
+			overflow: hidden
+		}
+
+		.view .mask {
+			position: absolute;
+			top: 0;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			background-attachment: fixed
+		}
+
+		.view img,
+		.view video {
+			position: relative;
+			display: block
+		}
+
+		@-webkit-keyframes fadeIn {
+			from {
+				opacity: 0
+			}
+			to {
+				opacity: 1
+			}
+		}
+
+		@keyframes fadeIn {
+			from {
+				opacity: 0
+			}
+			to {
+				opacity: 1
+			}
+		}
+
+		.fadeIn {
+			-webkit-animation-name: fadeIn;
+			animation-name: fadeIn
+		}
+
+		.navbar {
+			padding-right: 1rem!important;
+			font-weight: 300
+		}
+
+		.navbar .navbar-toggler {
+			outline: 0;
+			border-width: 0
+		}
+
+		@media (max-width:992px) {
+			.navbar .container {
+				width: 100%
+			}
+		}
+
+		.navbar .nav-item .nav-link {
+			display: block
+		}
+
+		@media (max-width:992px) {
+			.navbar .nav-item .nav-link {
+				padding-right: 6px;
+				padding-left: 6px
+			}
+		}
+
+		.navbar.navbar-light .navbar-toggler-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+		}
+
+		.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+			color: #000
+		}
+
+		.navbar.navbar-light .navbar-toggler {
+			color: #000
+		}
+
+		@media (min-width:600px) {
+			.navbar.scrolling-navbar {
+				padding-top: 12px;
+				padding-bottom: 12px
+			}
+		}
+
+		.carousel-fade .carousel-item {
+			opacity: 0
+		}
+
+		.carousel-fade .carousel-item.active {
+			opacity: 1
+		}
+
+		.carousel-fade .carousel-item.active {
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0)
+		}
+
+		@supports (transform-style:preserve-3d) {
+			.carousel-fade .carousel-item.active {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0)
+			}
+		}
+
+		button {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none
+		}
+
+		h3 {
+			margin-bottom: 2rem
+		}
+
+		@font-face {
+			font-family: FontAwesome;
+			src: url(../font/fa/fontawesome-webfont.eot?v=4.7.0);
+			src: url(../font/fa/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(../font/fa/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(../font/fa/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(../font/fa/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(../font/fa/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+			font-weight: 400;
+			font-style: normal
+		}
+
+		.fa {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale
+		}
+
+		.fa-2x {
+			font-size: 2em
+		}
+
+		.fa-map-marker:before {
+			content: "\f041"
+		}
+
+		.fa-chevron-up:before {
+			content: "\f077"
+		}
+
+		.fa-bullhorn:before {
+			content: "\f0a1"
+		}
+
+
+
+		section {
+			padding-top: 50px!important;
+			padding-bottom: 50px!important
+		}
+
+
+
+
+		.navbar {
+			background-color: rgba(255, 255, 255, 1);
+			font-size: 15px;
+			letter-spacing: 3px;
+			box-shadow: 5px 5px 5px rgba(155, 48, 232, .5);
+			-moz-box-shadow: 5px 5px 5px rgba(155, 148, 232, .5);
+			-webkit-box-shadow: 5px 5px 5px rgba(155, 48, 232, .5)
+		}
+
+		#myBtn {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: rgba(0, 0, 0, .4);
+			width: 50px;
+			height: 50px;
+			z-index: 99;
+			display: block;
+			text-decoration: none;
+			border-radius: 50%
+		}
+
+		#myBtn i {
+			color: #fff;
+			margin: 0;
+			position: relative;
+			font-size: 20px;
+			top: 10px;
+			right: 0
+		}
+
+		.navbar a {
+			font-weight: 500;
+			color: #303!important
+		}
+
+		.logo {
+			width: 20vh;
+			height: auto
+		}
+
+		.about-words {
+			font-size: 14px
+		}
+
+		.feature-title {
+			font-weight: 600;
+			font-size: 20px;
+			font-family: Montserrat, sans-serif
+		}
+
+		.feature-icon {
+			padding-left: 15px;
+			color: #9b30e8!important
+		}
+
+		.form h1 {
+			letter-spacing: 3px
+		}
+
+		.tab-content>div:last-child {
+			display: none
+		}
+
+		h1 {
+			text-align: center;
+			color: #fff;
+			font-weight: 300;
+			margin: 0 0 40px
+		}
+
+		label {
+			position: absolute;
+			-webkit-transform: translateY(6px);
+			transform: translateY(6px);
+			left: 13px;
+			color: rgba(255, 255, 255, .5);
+			-webkit-backface-visibility: hidden;
+			font-size: 22px;
+			letter-spacing: 3px;
+			font-weight: 400
+		}
+
+		label .req {
+			margin: 2px;
+			color: #9b30e8
+		}
+
+		input {
+			font-size: 22px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 5px 10px;
+			background: 0 0;
+			background-image: none;
+			border: 1px solid #a0b3b0;
+			color: #fff;
+			border-radius: 0
+		}
+
+		.field-wrap {
+			position: relative;
+			margin-bottom: 40px
+		}
+
+		.button {
+			border: 0;
+			outline: 0;
+			border-radius: 0;
+			padding: 15px 0;
+			font-size: 1rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			background: #44074c;
+			color: #ece6ed;
+			-webkit-appearance: none
+		}
+
+		.button-block {
+			display: block;
+			width: 100px
+		}
+
+		.forgot {
+			margin-top: -20px;
+			text-align: right
+		}
+
+		#aboutTitle {
+			font-family: Montserrat, sans-serif;
+			font-weight: 600;
+			letter-spacing: 3px;
+			color: #303!important;
+			margin-bottom: 50px;
+			position: relative
+		}
+
+		#aboutTitle:before {
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 5px;
+			background-color: #9b30e8;
+			margin-bottom: 10px;
+			margin-right: 10px
+		}
+
+		.wrap-this {
+			white-space: nowrap
+		}
+
+		.about-more {
+			font-weight: 400;
+			font-size: 20px;
+			letter-spacing: 2px
+		}
+	</style>
 	<!-- Bootstrap core CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Material Design Bootstrap -->
-	<link href="css/mdb.min.css" rel="stylesheet">
-	<link href="css/style.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/media.min.css" media="(max-width:1024px)">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600 " rel="stylesheet ">
 	<!-- Your custom styles (optional) -->
-	<link rel="stylesheet" href="css/baguetteBox.min.css">
-	<link rel="stylesheet" href="css/media.min.css">
-	<link rel="stylesheet" href="css/lightbox.min.css">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111992971-2"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111992971-2 "></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -46,14 +1385,14 @@
 </head>
 
 <body>
-	<div class="loader"></div>
+
 	<!-- Navbar -->
-	<nav class="navbar fixed-top navbar-light scrolling-navbar">
-		<div class="container">
+	<nav class="navbar fixed-top navbar-light scrolling-navbar ">
+		<div class="container ">
 
 			<!-- Brand -->
 			<a class="navbar-brand" href="#about">
-			<img class="logo" src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337691/logo-small.png">
+			<img class="logo" src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337691/logo-small.png ">
 			  </a>
 			<!-- Collapse -->
 			<button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,23 +1404,23 @@
 				<!-- Right -->
 				<ul class="navbar-nav ml-auto ">
 					<li class="nav-item ">
-						<a href="#about " class="nav-link ">About
+						<a href="#about" class="nav-link ">About
 			</a>
 					</li>
 					<li class="nav-item ">
-						<a href="#venue " class="nav-link ">Venue
+						<a href="#venue" class="nav-link ">Venue
 			</a>
 					</li>
 					<li class="nav-item ">
-						<a href="#teams " class="nav-link ">Teams
+						<a href="#teams" class="nav-link ">Teams
 			</a>
 					</li>
 					<li class="nav-item ">
-						<a href="#speakers " class="nav-link ">Speakers
+						<a href="#speakers" class="nav-link ">Speakers
 			</a>
 					</li>
 					<li class="nav-item ">
-						<a href="#schedule " class="nav-link ">
+						<a href="#schedule" class="nav-link ">
 			  Schedule
 			</a>
 					</li>
@@ -101,9 +1440,9 @@
 		</div>
 	</nav>
 	<!-- Navbar -->
-	<button id="myBtn"><i class="fa fa-chevron-up"></i></button>
+	<button id="myBtn"><i class="fa fa-chevron-up "></i></button>
 	<!--Carousel Wrapper-->
-	<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel ">
+	<div id="carousel-example-1z " class="carousel slide carousel-fade " data-ride="carousel ">
 
 		<!--Indicators-->
 		<ol class="carousel-indicators ">
@@ -118,13 +1457,13 @@
 				<div class="view ">
 
 					<!--Video source-->
-					<video poster="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523340060/poster.png" autoplay loop></video>
+					<video poster="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523742958/Candids/splashfix.png" autoplay loop></video>
 					<!-- Mask & flexbox options-->
 					<div class="mask rgba-white-light d-flex justify-content-center align-items-center ">
 
 						<!-- Content -->
 						<div class="text-center mx-5 wow fadeIn ">
-							<img class="logo-big" src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337688/logo-big.png">
+							<img class="logo-big " src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337688/logo-big.png ">
 
 						</div>
 						<!-- Content -->
@@ -141,6 +1480,9 @@
 		</div>
 		<div id="about"></div>
 	</div>
+	<noscript id="deferred-styles">
+	  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</noscript>
 
 	<!--Main layout-->
 
@@ -152,10 +1494,10 @@
 
 				<!--Section: Main info-->
 
-				<h3 id="aboutTitle" class="text-center">ABOUT THE SYMPOSIUM</h3>
+				<h3 id="aboutTitle" class="text-center ">ABOUT THE SYMPOSIUM</h3>
 
 				<!--Grid row-->
-				<div class="row wow fadeIn  ">
+				<div class="row wow fadeIn ">
 
 					<!--Grid column-->
 					<div class="col-lg-6 col-md-12 px-4 ">
@@ -167,14 +1509,14 @@
 							</div>
 							<div class="col-md-4 col-mobile ">
 								<h5 class="feature-title ">Location</h5>
-								<p class="wrap-this about-words">Durham Convention Center<br>301 West Morgan St<br>Durham, NC 27701</p>
+								<p class="wrap-this about-words ">Durham Convention Center<br>301 West Morgan St<br>Durham, NC 27701</p>
 							</div>
 							<div class="col-md-1 mr-3 ">
 								<i class="feature-icon fa fa-bullhorn fa-2x blue-text "></i>
 							</div>
 							<div class="col-md-4 col-mobile ">
 								<h5 class="feature-title ">Speakers</h5>
-								<p class="about-words">Dr. David Lalush
+								<p class="about-words ">Dr. David Lalush
 									<br> Dr. Lianne Cartee
 									<br>Dr. Devin Hubbard
 									<br>Dr. Andrew DiMeo
@@ -192,20 +1534,20 @@
 
 
 						<!--Third row-->
-						<div class="row row-mobile-2  ">
+						<div class="row row-mobile-2 ">
 							<div class="col-md-1 mr-3 ">
 								<i class="feature-icon fa fa-calendar fa-2x cyan-text "></i>
 							</div>
 							<div class="col-md-4 col-mobile ">
 								<h5 class="feature-title ">Date &amp; Time </h5>
-								<p class=" wrap-this about-words">May 2nd, 2018<br>2-8:30 PMPM<br>Presentations begin at 3:00 PM</p>
+								<p class=" wrap-this about-words ">May 2nd, 2018<br>2-8:30 PMPM<br>Presentations begin at 3:00 PM</p>
 							</div>
 							<div class="col-md-1 mr-3 ">
 								<i class="feature-icon fa fa-users fa-2x cyan-text "></i>
 							</div>
 							<div class="col-md-4 col-mobile ">
 								<h5 class="feature-title ">Sponsors</h5>
-								<p class="about-words">TBA</p>
+								<p class="about-words ">TBA</p>
 							</div>
 						</div>
 						<!--/Third row-->
@@ -219,8 +1561,8 @@
 						<p class="about-more ">12th Annual Biomedical Engineering Symposium</p>
 						<p class=" ">This event is organized by Drs. Shawn Gomez and Lauren Jones. BME seniors will have the opportunity to showcase their projects that they have worked on throughout the two-semester senior design capstone course.</p>
 						<p class="about-more ">i4 Final Pitch</p>
-						<p class="">The i4 Program is a novel initiative within the Joint Department of Biomedical Engineering that melds traditional undergraduate engineering education with biomedical entrepreneurship. Composed of four phases of need: Identification, Ideation, Innovation, and Implementation, this mentored design program culminates in an annual competition awarding financial support for further intellectual property development, and the eventual formation of a student-founded company. Bringing talented students together with highly accomplished academic, clinical, and industry professionals, the i4 Program drives young, innovative entrepreneurship into the Triangle region, while fostering the creation of practical solutions to real-world problems.</p>
-						<p class="">The i4 Program is generously funded by an anonymous donor.</p>
+						<p class=" ">The i4 Program is a novel initiative within the Joint Department of Biomedical Engineering that melds traditional undergraduate engineering education with biomedical entrepreneurship. Composed of four phases of need: Identification, Ideation, Innovation, and Implementation, this mentored design program culminates in an annual competition awarding financial support for further intellectual property development, and the eventual formation of a student-founded company. Bringing talented students together with highly accomplished academic, clinical, and industry professionals, the i4 Program drives young, innovative entrepreneurship into the Triangle region, while fostering the creation of practical solutions to real-world problems.</p>
+						<p class=" ">The i4 Program is generously funded by an anonymous donor.</p>
 
 
 					</div>
@@ -243,10 +1585,10 @@
 					<div class="col-md-5 col-md-offset-7 ">
 						<div class="venue-info ">
 							<p id="venue-title">Venue</p>
-							<p class="venue-more">Durham Convention Center</p>
-							<p class="move-this">The Durham Convention Center is located in the heart of the City Center District of Downtown Durham. It is a premier location for events, meetings, and conventions. The Durham Convention Center Complex includes the Durham Arts Center, Durham Armory, Carolina Theater, and the connected Durham Mariott City Center.</p>
+							<p class="venue-more ">Durham Convention Center</p>
+							<p class="move-this ">The Durham Convention Center is located in the heart of the City Center District of Downtown Durham. It is a premier location for events, meetings, and conventions. The Durham Convention Center Complex includes the Durham Arts Center, Durham Armory, Carolina Theater, and the connected Durham Mariott City Center.</p>
 
-							<a class="link-text" href="http://www.durhamconventioncenter.com/parking" target="_blank">Parking &amp; Directions</a>
+							<a class="link-text " href="http://www.durhamconventioncenter.com/parking " target="_blank ">Parking &amp; Directions</a>
 
 
 						</div>
@@ -267,8 +1609,8 @@
 
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/Screen_Shot_2018-04-04_at_6.12.59_PM_-_Blake_Mauro.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/Screen_Shot_2018-04-04_at_6.12.59_PM_-_Blake_Mauro.png" alt="Aery ">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/Screen_Shot_2018-04-04_at_6.12.59_PM_-_Blake_Mauro.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/Screen_Shot_2018-04-04_at_6.12.59_PM_-_Blake_Mauro.png " alt="Aery ">
 					</a>
 								<div class="caption ">
 									<h3>Aery</h3>
@@ -278,7 +1620,7 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419816/Teams/ARCIS_logo_1_-_Carolyn_Liu.png" data-lightbox="team">
+								<a class="lightbox2 " href="http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419816/Teams/ARCIS_logo_1_-_Carolyn_Liu.png " data-lightbox="team ">
 						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/ARCIS_logo_1_-_Carolyn_Liu.png " alt="ARCIS ">
 					</a>
 								<div class="caption ">
@@ -289,7 +1631,7 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419817/Teams/bionext_logo_new_-_Tyler_Scheviak.png" data-lightbox="team">
+								<a class="lightbox2 " href="http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419817/Teams/bionext_logo_new_-_Tyler_Scheviak.png " data-lightbox="team ">
 						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/bionext_logo_new_-_Tyler_Scheviak.png " alt="BioNext ">
 					</a>
 								<div class="caption ">
@@ -300,8 +1642,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Senior_Design_Logo_-_Claire_Schultz.png " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Senior_Design_Logo_-_Claire_Schultz.png" alt="Cardiac Pack ">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Senior_Design_Logo_-_Claire_Schultz.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Senior_Design_Logo_-_Claire_Schultz.png " alt="Cardiac Pack ">
 					</a>
 								<div class="caption ">
 									<h3>Cardiac Pack</h3>
@@ -311,8 +1653,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CBGS_Text_-_Kaylee_Clary.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CBGS_Text_-_Kaylee_Clary.png" alt="Rails ">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CBGS_Text_-_Kaylee_Clary.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CBGS_Text_-_Kaylee_Clary.png " alt="Rails ">
 					</a>
 								<div class="caption ">
 									<h3>CBGS</h3>
@@ -322,8 +1664,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CNS_logo_-_Prayag_Pershad.jpg  " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CNS_logo_-_Prayag_Pershad.jpg " alt="CNS">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CNS_logo_-_Prayag_Pershad.jpg " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/CNS_logo_-_Prayag_Pershad.jpg " alt="CNS ">
 					</a>
 								<div class="caption ">
 									<h3>Centennial Neurological Solutions</h3>
@@ -333,8 +1675,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/pastedImage0_-_Emily_Wagner.png " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/pastedImage0_-_Emily_Wagner.png " alt="Code Blue">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/pastedImage0_-_Emily_Wagner.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/pastedImage0_-_Emily_Wagner.png " alt="Code Blue ">
 					</a>
 								<div class="caption ">
 									<h3>Code Blue</h3>
@@ -344,8 +1686,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/EpiEx_Logo_-_Lindsey_Wells.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/EpiEx_Logo_-_Lindsey_Wells.png " alt="Epi">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/EpiEx_Logo_-_Lindsey_Wells.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/EpiEx_Logo_-_Lindsey_Wells.png " alt="Epi ">
 					</a>
 								<div class="caption ">
 									<h3>Epi-Ex</h3>
@@ -355,8 +1697,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screenshot_20180330-110836-01_-_nicholas_witham.jpg" data-lightbox="team">
-						<img src=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screenshot_20180330-110836-01_-_nicholas_witham.jpg" alt="Gaia">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screenshot_20180330-110836-01_-_nicholas_witham.jpg " data-lightbox="team ">
+						<img src=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screenshot_20180330-110836-01_-_nicholas_witham.jpg " alt="Gaia ">
 					</a>
 								<div class="caption ">
 									<h3>Gaia</h3>
@@ -366,8 +1708,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419816/Teams/GI_Logo_Transparent_PNG_-_Stephanie_Few.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/GI_Logo_Transparent_PNG_-_Stephanie_Few.png " alt="GI">
+								<a class="lightbox2 " href="http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419816/Teams/GI_Logo_Transparent_PNG_-_Stephanie_Few.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419816/Teams/GI_Logo_Transparent_PNG_-_Stephanie_Few.png " alt="GI ">
 					</a>
 								<div class="caption ">
 									<h3>Global Intuitive</h3>
@@ -377,8 +1719,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419817/Teams/final_-_Priya_Loganathar.png" data-lightbox="team">
-						<img src=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/final_-_Priya_Loganathar.png" alt="InfraSan">
+								<a class="lightbox2 " href=" http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419817/Teams/final_-_Priya_Loganathar.png " data-lightbox="team ">
+						<img src=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/final_-_Priya_Loganathar.png " alt="InfraSan ">
 					</a>
 								<div class="caption ">
 									<h3>InfraSan</h3>
@@ -388,19 +1730,19 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/lacunalogo.jpg" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/lacunalogo.jpg " alt="Lacuna">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/lacunalogo.jpg " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/lacunalogo.jpg " alt="Lacuna ">
 					</a>
 								<div class="caption ">
 									<h3>Lacuna Medical</h3>
-									<p>A "hole" new way of thinking</p>
+									<p>A "hole " new way of thinking</p>
 								</div>
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/logo_-_Puja_Patel.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/logo_-_Puja_Patel.png " alt="Novelle">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/logo_-_Puja_Patel.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/logo_-_Puja_Patel.png " alt="Novelle ">
 					</a>
 								<div class="caption ">
 									<h3>Novelle Technologies</h3>
@@ -410,8 +1752,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/oak_city_medical_plain_text_option_1_-_Michael_Iasiello.png " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/oak_city_medical_plain_text_option_1_-_Michael_Iasiello.png " alt="Oak">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/oak_city_medical_plain_text_option_1_-_Michael_Iasiello.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/oak_city_medical_plain_text_option_1_-_Michael_Iasiello.png " alt="Oak ">
 					</a>
 								<div class="caption ">
 									<h3>Oak City Medical</h3>
@@ -421,8 +1763,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/PackMed_Team_Photo_-_Neelam_Modi.jpg" data-lightbox="team">
-						<img src=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/PackMed_Team_Photo_-_Neelam_Modi.jpg" alt="PackMed">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/PackMed_Team_Photo_-_Neelam_Modi.jpg " data-lightbox="team ">
+						<img src=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/PackMed_Team_Photo_-_Neelam_Modi.jpg " alt="PackMed ">
 					</a>
 								<div class="caption ">
 									<h3>PackMed</h3>
@@ -432,8 +1774,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/PediaPack_group_photo_-_Sophia_Silver.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/PediaPack_group_photo_-_Sophia_Silver.png" alt="Pedia">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/PediaPack_group_photo_-_Sophia_Silver.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/PediaPack_group_photo_-_Sophia_Silver.png " alt="Pedia ">
 					</a>
 								<div class="caption ">
 									<h3>Pedia Pack Devices</h3>
@@ -443,8 +1785,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_11.53.44_PM_-_Matthew_Brouwer.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_11.53.44_PM_-_Matthew_Brouwer.png " alt="Prec">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_11.53.44_PM_-_Matthew_Brouwer.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_11.53.44_PM_-_Matthew_Brouwer.png " alt="Prec ">
 					</a>
 								<div class="caption ">
 									<h3>Precision Packware</h3>
@@ -454,8 +1796,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/a_vflip/a_180/v1523419817/Teams/IMG_2619_-_Pyra_Medical.jpg  " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/a_vflip/a_180/v1523419817/Teams/IMG_2619_-_Pyra_Medical.jpg " alt="Pyra">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/a_vflip/a_180/v1523419817/Teams/IMG_2619_-_Pyra_Medical.jpg " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/a_vflip/a_180/v1523419817/Teams/IMG_2619_-_Pyra_Medical.jpg " alt="Pyra ">
 					</a>
 								<div class="caption ">
 									<h3>PyraMedical</h3>
@@ -465,8 +1807,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/smslogo.jpg" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/smslogo.jpg" alt="SMS">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/smslogo.jpg " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523539298/Teams/smslogo.jpg " alt="SMS ">
 					</a>
 								<div class="caption ">
 									<h3>SafER Medical Solutions</h3>
@@ -476,8 +1818,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_8.15.37_PM_-_Sarah_Lucas.png " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_8.15.37_PM_-_Sarah_Lucas.png" alt="SS">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_8.15.37_PM_-_Sarah_Lucas.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Screen_Shot_2018-04-05_at_8.15.37_PM_-_Sarah_Lucas.png " alt="SS ">
 					</a>
 								<div class="caption ">
 									<h3>Serpentine Surgical</h3>
@@ -487,8 +1829,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419819/Teams/SparkTek-logo-black_1_-_Elliot_Krause.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/SparkTek-logo-black_1_-_Elliot_Krause.png" alt="Spark">
+								<a class="lightbox2 " href=" http://res.cloudinary.com/dx8q9ssty/image/upload/b_rgb:ffffff/v1523419819/Teams/SparkTek-logo-black_1_-_Elliot_Krause.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/SparkTek-logo-black_1_-_Elliot_Krause.png " alt="Spark ">
 					</a>
 								<div class="caption ">
 									<h3>SparkTek</h3>
@@ -498,8 +1840,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Synapt_Logo_mkIII_-_James_Hensel.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Synapt_Logo_mkIII_-_James_Hensel.png" alt="Syna">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Synapt_Logo_mkIII_-_James_Hensel.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/Synapt_Logo_mkIII_-_James_Hensel.png " alt="Syna ">
 					</a>
 								<div class="caption ">
 									<h3>SynaPT</h3>
@@ -509,8 +1851,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/TarHealers_Logo_-_Raya_Martinez.png" data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/TarHealers_Logo_-_Raya_Martinez.png" alt="Tar">
+								<a class="lightbox2 " href=" https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/TarHealers_Logo_-_Raya_Martinez.png " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/TarHealers_Logo_-_Raya_Martinez.png " alt="Tar ">
 					</a>
 								<div class="caption ">
 									<h3>The TarHealers</h3>
@@ -520,8 +1862,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/IMG_8184_-_Jesse_Melton.jpg " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/IMG_8184_-_Jesse_Melton.jpg" alt="Trophy">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/IMG_8184_-_Jesse_Melton.jpg " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419818/Teams/IMG_8184_-_Jesse_Melton.jpg " alt="Trophy ">
 					</a>
 								<div class="caption ">
 									<h3>Trophy Medical</h3>
@@ -531,8 +1873,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/DSC_0071_-_Alex_Brown.jpg " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/DSC_0071_-_Alex_Brown.jpg" alt="Ventri">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/DSC_0071_-_Alex_Brown.jpg " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419817/Teams/DSC_0071_-_Alex_Brown.jpg " alt="Ventri ">
 					</a>
 								<div class="caption ">
 									<h3>Ventri Health</h3>
@@ -542,8 +1884,8 @@
 						</div>
 						<div class="col-sm-6 col-md-4 ">
 							<div class="thumbnail ">
-								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/IMG_1383_-_Andrew_Conley.jpg " data-lightbox="team">
-						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/IMG_1383_-_Andrew_Conley.jpg" alt="Watch">
+								<a class="lightbox2 " href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/IMG_1383_-_Andrew_Conley.jpg " data-lightbox="team ">
+						<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523419819/Teams/IMG_1383_-_Andrew_Conley.jpg " alt="Watch ">
 					</a>
 								<div class="caption ">
 									<h3>Watchdog Medical</h3>
@@ -564,14 +1906,14 @@
 
 			<div class="container speaker ">
 				<div class="row ">
-					<div class="col-md-3 img-mobile">
+					<div class="col-md-3 img-mobile ">
 						<div class="box-1 ">
 							<div class="speaker-text ">
-								<div class="speaker-main">David Lalush, PhD</div>
-								<div class="speaker-ok">Associate Professor</div>
-								<div class="speaker-about">Dr. Lalush's current research interest is in simultaneous PET and MR imaging, especially with respect to MRI-guided correction of the PET image for attenuation and deformable motion. He also collaborates with clinical scientists to develop new applications for PET/MR in cancer and neuroscience.</div>
+								<div class="speaker-main ">David Lalush, PhD</div>
+								<div class="speaker-ok ">Associate Professor</div>
+								<div class="speaker-about ">Dr. Lalush's current research interest is in simultaneous PET and MR imaging, especially with respect to MRI-guided correction of the PET image for attenuation and deformable motion. He also collaborates with clinical scientists to develop new applications for PET/MR in cancer and neuroscience.</div>
 							</div>
-							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337690/lalush.png" class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337690/lalush.png " class="img-fluid ">
 
 						</div>
 						<h3 class="text-center speaker-name ">David Lalush, PhD</h3>
@@ -580,11 +1922,11 @@
 						<div class="box-2 ">
 							<div class="speaker-text ">
 
-								<div class="speaker-main">Lianne Cartee, PhD</div>
-								<div class="speaker-ok">Director of Undergraduate Studies</div>
-								<div class="speaker-about">Dr. Cartee is one of the main drivers in the formation of the joint department between NC State and UNC-Chapel Hill. As Director of Undergraduate Studies, Dr. Cartee was one of the primary faculty responsible for the program's ABET accreditation in August 2017.</div>
+								<div class="speaker-main ">Lianne Cartee, PhD</div>
+								<div class="speaker-ok ">Director of Undergraduate Studies</div>
+								<div class="speaker-about ">Dr. Cartee is one of the main drivers in the formation of the joint department between NC State and UNC-Chapel Hill. As Director of Undergraduate Studies, Dr. Cartee was one of the primary faculty responsible for the program's ABET accreditation in August 2017.</div>
 							</div>
-							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337686/cartee.png" class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337686/cartee.png " class="img-fluid ">
 
 						</div>
 						<h3 class="text-center speaker-name ">Lianne Cartee, PhD</h3>
@@ -598,7 +1940,7 @@
 								<div class="speaker-ok ">Lecturer</div>
 								<div class="speaker-about ">Dr. Hubbard currently leads the Biomedical Engineering Senior Design Program at UNC. His research primarily focuses on using color and feature recognition in both 2D and 3D to create quantitative assessments of dermal wounds in clinical settings. </div>
 							</div>
-							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337690/hubbard.png" class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337690/hubbard.png " class="img-fluid ">
 						</div>
 						<h3 class="text-center speaker-name ">Devin Hubbard, PhD</h3>
 					</div>
@@ -610,7 +1952,7 @@
 								<div class="speaker-ok ">Associate Professor of the Practice</div>
 								<div class="speaker-about ">Dr. DiMeo currently leads the Biomedical Engineering Senior Design Program at NCSU. Dr. DiMeo is a founder of Novocor Medical Systems and a founding board member of Augment Medical.</div>
 							</div>
-							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337688/dimeo.png" class="img-fluid">
+							<img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337688/dimeo.png " class="img-fluid ">
 
 						</div>
 						<h3 class="text-center speaker-name ">Andrew DiMeo, PhD</h3>
@@ -627,90 +1969,90 @@
 		<!--Section: Main info-->
 		<section class="schedule-section ">
 			<h3 id="scheduleTitle" class="text-center ">SCHEDULE</h3>
-			<div class="container">
-				<div class="row">
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+			<div class="container ">
+				<div class="row ">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Welcome</h4>
 							<br/>
-							<p class="feature-speaker">Dr. Devin Hubbard</p>
+							<p class="feature-speaker ">Dr. Devin Hubbard</p>
 							<br/>
 							<p>2:00 PM - 2:15 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Networking &amp; Posters </h4>
 							<br/>
 							<p>2:15 PM - 3:00 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Presentations</h4>
 							<br/>
 							<p>3:00 PM - 4:00 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Posters</h4>
 							<br/>
 							<p>4:00 PM - 5:00 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>i4 Closed Room Session</h4>
 							<br/>
 							<p>4:30 PM - 6:30 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Presentations</h4>
 							<br/>
 							<p>5:00 PM - 6:30 PM</p>
 						</div>
 					</div>
 
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Networking &amp; Dinner</h4>
 							<br/>
 							<p>6:30 PM - 7:15 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Keynote Speaker</h4>
 							<br/>
-							<p class="feature-speaker">Dr. David Lalush</p>
+							<p class="feature-speaker ">Dr. David Lalush</p>
 							<br/>
 							<p>7:15 PM - 7:30 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Awards</h4>
 							<br/>
 							<p>7:30 PM - 8:00 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Joint Program Speaker</h4>
 							<br/>
-							<p class="feature-speaker">Dr. Lianne Cartee</p>
+							<p class="feature-speaker ">Dr. Lianne Cartee</p>
 							<br/>
 							<p>8:00 PM - 8:15 PM</p>
 						</div>
 					</div>
-					<div class="time-container">
-						<div class="col-md-3 show-flex">
+					<div class="time-container ">
+						<div class="col-md-3 show-flex ">
 							<h4>Closing Remarks</h4>
 							<br/>
-							<p class="feature-speaker">Dr. Andrew DiMeo</p>
+							<p class="feature-speaker ">Dr. Andrew DiMeo</p>
 							<br/>
 							<p>8:15 - 8:30 PM</p>
 						</div>
@@ -721,19 +2063,19 @@
 
 		<section class="photos ">
 			<h3 id="photoTitle" class="text-center sectionTitle ">PHOTO GALLERY</h3>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20170824_150704611_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg" data-lightbox="bme"><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20170824_150704611_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20180223_135625620_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg" data-lightbox="bme"><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20180223_135625620_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/29542803_10155062223661529_2780984218094770530_n_-_Stephanie_Few.jpg" data-lightbox="bme"><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/29542803_10155062223661529_2780984218094770530_n_-_Stephanie_Few.jpg"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463414/Candids/DSC_0051_-_Alex_Brown.jpg" data-lightbox="bme"><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463414/Candids/DSC_0051_-_Alex_Brown.jpg"></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20170824_150704611_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20170824_150704611_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20180223_135625620_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/20180223_135625620_iOS_-_Tyler_Scheviak_-_Tyler_Scheviak.jpg "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/29542803_10155062223661529_2780984218094770530_n_-_Stephanie_Few.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463413/Candids/29542803_10155062223661529_2780984218094770530_n_-_Stephanie_Few.jpg "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463414/Candids/DSC_0051_-_Alex_Brown.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463414/Candids/DSC_0051_-_Alex_Brown.jpg "></a>
 
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523659721/Teams/f276f451-95aa-4204-a0c0-cccc0dee0ee6-original.jpg" data-lightbox="bme"><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523659721/Teams/f276f451-95aa-4204-a0c0-cccc0dee0ee6-original.jpg"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/DSC_9313_-_Carolyn_Liu.jpg" data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/DSC_9313_-_Carolyn_Liu.jpg"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/IMG_1412.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/IMG_1412.jpg"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_1417.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_1417.jpg"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_20180122_002136_396_-_nicholas_witham.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_20180122_002136_396_-_nicholas_witham.jpg"></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523659721/Teams/f276f451-95aa-4204-a0c0-cccc0dee0ee6-original.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523659721/Teams/f276f451-95aa-4204-a0c0-cccc0dee0ee6-original.jpg "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/DSC_9313_-_Carolyn_Liu.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/DSC_9313_-_Carolyn_Liu.jpg "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/IMG_1412.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463415/Candids/IMG_1412.jpg "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_1417.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_1417.jpg "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_20180122_002136_396_-_nicholas_witham.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_20180122_002136_396_-_nicholas_witham.jpg "></a>
 			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_2829_-_Michael_Iasiello.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/IMG_2829_-_Michael_Iasiello.jpg "></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/Screen_Shot_2018-04-04_at_8.37.09_AM_-_Elliot_Krause.png " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/Screen_Shot_2018-04-04_at_8.37.09_AM_-_Elliot_Krause.png"></a>
-			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463417/Candids/The_Tar_Healers_-_Raya_Martinez.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463417/Candids/The_Tar_Healers_-_Raya_Martinez.jpg"></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/Screen_Shot_2018-04-04_at_8.37.09_AM_-_Elliot_Krause.png " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463416/Candids/Screen_Shot_2018-04-04_at_8.37.09_AM_-_Elliot_Krause.png "></a>
+			<a href="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463417/Candids/The_Tar_Healers_-_Raya_Martinez.jpg " data-lightbox="bme "><img src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523463417/Candids/The_Tar_Healers_-_Raya_Martinez.jpg "></a>
 
 			<div id="register"></div>
 		</section>
@@ -742,7 +2084,7 @@
 
 			<div class="form ">
 				<div class="tab-content ">
-					<div id="signup ">
+					<div id="signup">
 						<form action="/ " method="post ">
 
 							<div class="top-row ">
@@ -772,16 +2114,16 @@
 								<label id="olabel">
 			  Organization<span class="req ">*</span>
 			</label>
-								<input id="org" type="password " required autocomplete="off " />
+								<input id="org" type="text" required autocomplete="off " />
 							</div>
 
-							<button type="button" class="button button-block " onclick="submitForm() " value="submit ">Sign Up</button>
+							<button type="button" class="button button-block " onclick="submitForm()" value="submit ">Sign Up</button>
 
 						</form>
 
 					</div>
 
-					<div id=" login ">
+					<div id=" login">
 						<h1>Welcome Back!</h1>
 
 						<form action="/ " method="post ">
@@ -813,27 +2155,27 @@
 
 			</div>
 			<!-- /form -->
-			<div class="register-message">
-				<p class="small-message">SIGN UP NOW AND RESERVE YOUR NAMETAG!</p>
-				<p class="large-message">DON'T MISS OUT</p>
-				<p class="large-message close-gap">REGISTER NOW!</p>
+			<div class="register-message ">
+				<p class="small-message ">SIGN UP NOW AND RESERVE YOUR NAMETAG!</p>
+				<p class="large-message ">DON'T MISS OUT</p>
+				<p class="large-message close-gap ">REGISTER NOW!</p>
 
 			</div>
 
 		</section>
 
 		<div id="contact"></div>
-		<section class="contact-color">
-			<h3 id="contactTitle" class="text-center  ">CONTACT</h3>
+		<section class="contact-color ">
+			<h3 id="contactTitle" class="text-center ">CONTACT</h3>
 			<h2 class="contact-info text-center ">
 				Philips Hall, Room 35
 				<br> E Cameron Ave
 				<br> Chapel Hill, NC 27514
 			</h2>
-			<div class="text-center">
+			<div class="text-center ">
 				<i class="fa fa-envelope contact-icon "></i>
 				<br>
-				<div class="contact-info">TBA</div>
+				<div class="contact-info ">TBA</div>
 			</div>
 
 		</section>
@@ -888,14 +2230,41 @@
 
 	<!-- SCRIPTS -->
 	<!-- JQuery -->
+	<script type="text/javascript " src="js/bootstrap.min.js "></script>
 	<script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
+
 	<!-- Bootstrap tooltips -->
 	<script type="text/javascript " src="js/popper.min.js "></script>
 	<!-- Bootstrap core JavaScript -->
-	<script type="text/javascript " src="js/bootstrap.min.js "></script>
+
 	<script type="text/javascript " src="js/mdb.min.js "></script>
 	<script type="text/javascript " src="js/scripts.min.js "></script>
+	<script type="text/javascript " src="js/lightbox.min.js "></script>
+	<script>
+		lightbox.option({
+			'maxWidth': 500
+		})
+	</script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js "></script>
+
+	<script>
+		var loadDeferredStyles = function() {
+			var addStylesNode = document.getElementById("deferred-styles");
+			var replacement = document.createElement("div");
+			replacement.innerHTML = addStylesNode.textContent;
+			document.body.appendChild(replacement)
+			addStylesNode.parentElement.removeChild(addStylesNode);
+		};
+		var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+			window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+		if (raf) raf(function() {
+			window.setTimeout(loadDeferredStyles, 0);
+		});
+		else window.addEventListener('load', loadDeferredStyles);
+	</script>
+
+
 	<script>
 		baguetteBox.run('.tz-gallery');
 	</script>
@@ -904,7 +2273,8 @@
 		// Animations initialization
 		new WOW().init();
 	</script>
-	<script type="text/javascript" src="js/lightbox.min.js"></script>
+
+
 </body>
 
 </html>
