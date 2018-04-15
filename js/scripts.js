@@ -1,3 +1,8 @@
+$(window).on('load', function () {
+	// Animate loader off screen
+	$(".loader").fadeOut("slow");;
+});
+
 window.onload = function () {
 	if ( /* conditions */ window.innerWidth > 480)
 		document.querySelector("video").src = "https://res.cloudinary.com/dx8q9ssty/video/upload/v1523339931/video.mp4";
