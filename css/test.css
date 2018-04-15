@@ -44005,17 +44005,6 @@ section.photos > a:nth-child(13) > img {
 	transform: translateY(-10px) scale(1.02);
 }
 
-
-
-.lb-outerContainer,
-.lb-dataContainer {
-	max-width: 420px;
-	height: auto!important;
-	width: auto !important;
-}
-
-
-
 .contact-icon {
 	color: #9b30e8;
 	padding-bottom: 10px;
