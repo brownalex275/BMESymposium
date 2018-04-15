@@ -1322,7 +1322,6 @@
 			.fa-bullhorn:before {
 				content: "\f0a1"
 			}
-
 	</style>
 	<!-- Bootstrap core CSS -->
 	<!-- Material Design Bootstrap -->
@@ -1343,7 +1342,6 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-111992971-2');
-
 	</script>
 
 </head>
@@ -2200,6 +2198,21 @@
 	<!-- JQuery -->
 
 
+	<script>
+		var loadDeferredStyles = function() {
+			var addStylesNode = document.getElementById("deferred-styles");
+			var replacement = document.createElement("div");
+			replacement.innerHTML = addStylesNode.textContent;
+			document.body.appendChild(replacement)
+			addStylesNode.parentElement.removeChild(addStylesNode);
+		};
+		var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+			window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+		if (raf) raf(function() {
+			window.setTimeout(loadDeferredStyles, 0);
+		});
+		else window.addEventListener('load', loadDeferredStyles);
+	</script>
 
 	<script defer type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
 
@@ -2218,44 +2231,26 @@
 	<script defer type="text/javascript " src="js/lightbox.min.js "></script>
 
 
+	<script defer type="text/javascript " src="js/lightbox-options.min.js "></script>
 
-	<script>
-		lightbox.option({
-			'maxWidth': 500
-		})
 
-	</script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js "></script>
-
-	<script>
-		var loadDeferredStyles = function() {
-			var addStylesNode = document.getElementById("deferred-styles");
-			var replacement = document.createElement("div");
-			replacement.innerHTML = addStylesNode.textContent;
-			document.body.appendChild(replacement)
-			addStylesNode.parentElement.removeChild(addStylesNode);
-		};
-		var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-			window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-		if (raf) raf(function() {
-			window.setTimeout(loadDeferredStyles, 0);
-		});
-		else window.addEventListener('load', loadDeferredStyles);
-
-	</script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js "></script>
 
 
 	<script>
 		baguetteBox.run('.tz-gallery');
-
 	</script>
 	<!-- Initializations -->
 	<script type="text/javascript ">
 		// Animations initialization
 		new WOW().init();
+	</script>
+
+	<script >
 
 	</script>
+
+
 
 
 </body>
