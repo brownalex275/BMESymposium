@@ -19,51 +19,7 @@
 	<meta property="og:description" content="12th Annual BME Symposium for the UNC/NCSU Joint Department of Biomedical Engineering" />
 	<title>BME Symposium</title>
 	<!-- Font Awesome -->
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
-		html {
-			overflow-y: scroll
-		}
-
-		body {
-			overflow: hidden
-		}
-
-		.view,
-		body,
-		html {
-			background-color: #fff;
-			color: #303!important;
-			font-family: Montserrat, sans-serif
-		}
-
-		.carousel {
-			height: 100%
-		}
-
-		.carousel .carousel-inner {
-			height: 100%
-		}
-
-		.carousel .carousel-inner .active,
-		.carousel .carousel-inner .carousel-item {
-			height: 100%
-		}
-
-		video {
-			max-width: 100%;
-			background-image: url('https://res.cloudinary.com/dx8q9ssty/image/upload/v1523742958/Candids/splashfix.png')
-		}
-
-		.logo-big {
-			width: 100vw;
-			height: auto
-		}
-
-		.rgba-white-light {
-			background-color: rgba(255, 255, 255, .56) !important
-		}
-
 		:root {
 			--blue: #007bff;
 			--indigo: #6610f2;
@@ -518,78 +474,229 @@
 			text-align: center!important
 		}
 
-		:root {
-			--blue: #007bff;
-			--indigo: #6610f2;
-			--purple: #6f42c1;
-			--pink: #e83e8c;
-			--red: #dc3545;
-			--orange: #fd7e14;
-			--yellow: #ffc107;
-			--green: #28a745;
-			--teal: #20c997;
-			--cyan: #17a2b8;
-			--white: #fff;
-			--gray: #6c757d;
-			--gray-dark: #343a40;
-			--primary: #007bff;
-			--secondary: #6c757d;
-			--success: #28a745;
-			--info: #17a2b8;
-			--warning: #ffc107;
-			--danger: #dc3545;
-			--light: #f8f9fa;
-			--dark: #343a40;
-			--breakpoint-xs: 0;
-			--breakpoint-sm: 576px;
-			--breakpoint-md: 768px;
-			--breakpoint-lg: 992px;
-			--breakpoint-xl: 1200px;
-			--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-			--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
-		}
-
-		*,
-		::after,
-		::before {
-			box-sizing: border-box
-		}
-
 		html {
-			font-family: sans-serif;
-			line-height: 1.15;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
-			-ms-overflow-style: scrollbar
-		}
-
-		@-ms-viewport {
-			width: device-width
-		}
-
-		main,
-		nav,
-		section {
-			display: block
+			overflow-y: scroll
 		}
 
 		body {
-			margin: 0;
-			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-			font-size: 1rem;
-			font-weight: 400;
-			line-height: 1.5;
-			color: #212529;
-			text-align: left;
-			background-color: #fff
+			overflow: hidden
 		}
 
-		h1,
-		h3,
-		h5 {
-			margin-top: 0;
-			margin-bottom: .5rem
+
+		.navbar {
+			background-color: rgba(255, 255, 255, 1);
+			font-size: 15px;
+			letter-spacing: 3px;
+			box-shadow: 5px 5px 5px rgba(155, 48, 232, .5);
+			-moz-box-shadow: 5px 5px 5px rgba(155, 148, 232, .5);
+			-webkit-box-shadow: 5px 5px 5px rgba(155, 48, 232, .5)
 		}
+
+		.navbar a {
+			font-weight: 500;
+			color: #303!important font-
+		}
+
+		.navbar-collapse.collapse.in {
+			display: inline-block !important;
+		}
+
+		.logo {
+			width: 20vh;
+			height: auto
+		}
+
+
+		.view,
+		body,
+		html {
+			background-color: #fff;
+			color: #303!important;
+			font-family: Montserrat, sans-serif
+		}
+
+		video {
+			max-width: 100%;
+		}
+
+		.carousel {
+			height: 100%
+		}
+
+		.carousel,
+		.carousel-inner {
+			height: 100%
+		}
+
+		.carousel,
+		.carousel-inner,
+		.active,
+		.carousel,
+		.carousel-inner,
+		.carousel-item {
+			height: 100%
+		}
+
+
+
+
+		.rgba-white-light {
+			background-color: rgba(255, 255, 255, .56) !important
+		}
+
+		.logo-big {
+			width: 100vw;
+			height: auto
+		}
+
+
+		section {
+			padding-top: 50px!important;
+			padding-bottom: 50px!important
+		}
+
+
+
+		#myBtn {
+			position: fixed;
+			bottom: 20px;
+			right: 20px;
+			background: rgba(0, 0, 0, .4);
+			width: 50px;
+			height: 50px;
+			z-index: 99;
+			display: none;
+			text-decoration: none;
+			border-radius: 50%;
+
+		}
+
+		#myBtn i {
+			color: #fff;
+			margin: 0;
+			position: relative;
+			font-size: 20px;
+			top: 10px;
+			right: 0
+		}
+
+
+		.about-words {
+			font-size: 14px
+		}
+
+		.feature-title {
+			font-weight: 600;
+			font-size: 20px;
+			font-family: Montserrat, sans-serif
+		}
+
+		.feature-icon {
+			padding-left: 15px;
+			color: #9b30e8!important
+		}
+
+		.form h1 {
+			letter-spacing: 3px
+		}
+
+		.tab-content>div:last-child {
+			display: none
+		}
+
+		h1 {
+			text-align: center;
+			color: #fff;
+			font-weight: 300;
+			margin: 0 0 40px
+		}
+
+		label {
+			position: absolute;
+			-webkit-transform: translateY(6px);
+			transform: translateY(6px);
+			left: 13px;
+			color: rgba(255, 255, 255, .5);
+			-webkit-backface-visibility: hidden;
+			font-size: 22px;
+			letter-spacing: 3px;
+			font-weight: 400
+		}
+
+		label .req {
+			margin: 2px;
+			color: #9b30e8
+		}
+
+		input {
+			font-size: 22px;
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 5px 10px;
+			background: 0 0;
+			background-image: none;
+			border: 1px solid #a0b3b0;
+			color: #fff;
+			border-radius: 0
+		}
+
+		.field-wrap {
+			position: relative;
+			margin-bottom: 40px
+		}
+
+		.button {
+			border: 0;
+			outline: 0;
+			border-radius: 0;
+			padding: 15px 0;
+			font-size: 1rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: .1em;
+			background: #44074c;
+			color: #ece6ed;
+			-webkit-appearance: none
+		}
+
+		.button-block {
+			display: block;
+			width: 100px
+		}
+
+		.forgot {
+			margin-top: -20px;
+			text-align: right
+		}
+
+		#aboutTitle {
+			font-family: Montserrat, sans-serif;
+			font-weight: 600;
+			letter-spacing: 3px;
+			color: #303!important;
+			margin-bottom: 50px;
+			position: relative
+		}
+
+		#aboutTitle:before {
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 5px;
+			background-color: #9b30e8;
+			margin-bottom: 10px;
+			margin-right: 10px
+		}
+
+		.wrap-this {
+			white-space: nowrap
+		}
+
+		.about-more {
+			font-weight: 400;
+			font-size: 20px;
+			letter-spacing: 2px
 
 		p {
 			margin-top: 0;
@@ -1193,180 +1300,13 @@
 		}
 
 
-
-		section {
-			padding-top: 50px!important;
-			padding-bottom: 50px!important
-		}
-
-
-
-
-		.navbar {
-			background-color: rgba(255, 255, 255, 1);
-			font-size: 15px;
-			letter-spacing: 3px;
-			box-shadow: 5px 5px 5px rgba(155, 48, 232, .5);
-			-moz-box-shadow: 5px 5px 5px rgba(155, 148, 232, .5);
-			-webkit-box-shadow: 5px 5px 5px rgba(155, 48, 232, .5)
-		}
-
-		#myBtn {
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			background: rgba(0, 0, 0, .4);
-			width: 50px;
-			height: 50px;
-			z-index: 99;
-			display: block;
-			text-decoration: none;
-			border-radius: 50%
-		}
-
-		#myBtn i {
-			color: #fff;
-			margin: 0;
-			position: relative;
-			font-size: 20px;
-			top: 10px;
-			right: 0
-		}
-
-		.navbar a {
-			font-weight: 500;
-			color: #303!important
-		}
-
-		.logo {
-			width: 20vh;
-			height: auto
-		}
-
-		.about-words {
-			font-size: 14px
-		}
-
-		.feature-title {
-			font-weight: 600;
-			font-size: 20px;
-			font-family: Montserrat, sans-serif
-		}
-
-		.feature-icon {
-			padding-left: 15px;
-			color: #9b30e8!important
-		}
-
-		.form h1 {
-			letter-spacing: 3px
-		}
-
-		.tab-content>div:last-child {
-			display: none
-		}
-
-		h1 {
-			text-align: center;
-			color: #fff;
-			font-weight: 300;
-			margin: 0 0 40px
-		}
-
-		label {
-			position: absolute;
-			-webkit-transform: translateY(6px);
-			transform: translateY(6px);
-			left: 13px;
-			color: rgba(255, 255, 255, .5);
-			-webkit-backface-visibility: hidden;
-			font-size: 22px;
-			letter-spacing: 3px;
-			font-weight: 400
-		}
-
-		label .req {
-			margin: 2px;
-			color: #9b30e8
-		}
-
-		input {
-			font-size: 22px;
-			display: block;
-			width: 100%;
-			height: 100%;
-			padding: 5px 10px;
-			background: 0 0;
-			background-image: none;
-			border: 1px solid #a0b3b0;
-			color: #fff;
-			border-radius: 0
-		}
-
-		.field-wrap {
-			position: relative;
-			margin-bottom: 40px
-		}
-
-		.button {
-			border: 0;
-			outline: 0;
-			border-radius: 0;
-			padding: 15px 0;
-			font-size: 1rem;
-			font-weight: 600;
-			text-transform: uppercase;
-			letter-spacing: .1em;
-			background: #44074c;
-			color: #ece6ed;
-			-webkit-appearance: none
-		}
-
-		.button-block {
-			display: block;
-			width: 100px
-		}
-
-		.forgot {
-			margin-top: -20px;
-			text-align: right
-		}
-
-		#aboutTitle {
-			font-family: Montserrat, sans-serif;
-			font-weight: 600;
-			letter-spacing: 3px;
-			color: #303!important;
-			margin-bottom: 50px;
-			position: relative
-		}
-
-		#aboutTitle:before {
-			content: "";
-			display: inline-block;
-			width: 20px;
-			height: 5px;
-			background-color: #9b30e8;
-			margin-bottom: 10px;
-			margin-right: 10px
-		}
-
-		.wrap-this {
-			white-space: nowrap
-		}
-
-		.about-more {
-			font-weight: 400;
-			font-size: 20px;
-			letter-spacing: 2px
-		}
 	</style>
 	<!-- Bootstrap core CSS -->
 	<!-- Material Design Bootstrap -->
 
 
-	<link rel="stylesheet" href="css/media.min.css" media="(max-width:1024px)">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600 " rel="stylesheet ">
+
+
 	<!-- Your custom styles (optional) -->
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -1387,15 +1327,15 @@
 <body>
 
 	<!-- Navbar -->
-	<nav class="navbar fixed-top navbar-light scrolling-navbar ">
-		<div class="container ">
+	<nav class="navbar fixed-top navbar-light scrolling-navbar">
+		<div class="container">
 
 			<!-- Brand -->
 			<a class="navbar-brand" href="#about">
-			<img class="logo" src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337691/logo-small.png ">
+			<img class="logo" src="https://res.cloudinary.com/dx8q9ssty/image/upload/fl_lossy,f_auto,q_auto/v1523337691/logo-small.png ">
 			  </a>
 			<!-- Collapse -->
-			<button class="navbar-toggler" type="button " data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 
@@ -1457,13 +1397,13 @@
 				<div class="view ">
 
 					<!--Video source-->
-					<video poster="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523742958/Candids/splashfix.png" autoplay loop></video>
+					<video poster="http://res.cloudinary.com/dx8q9ssty/image/upload/fl_lossy,f_auto,q_auto/v1523742958/Candids/splashfix.png" autoplay loop></video>
 					<!-- Mask & flexbox options-->
 					<div class="mask rgba-white-light d-flex justify-content-center align-items-center ">
 
 						<!-- Content -->
 						<div class="text-center mx-5 wow fadeIn ">
-							<img class="logo-big " src="https://res.cloudinary.com/dx8q9ssty/image/upload/v1523337688/logo-big.png ">
+							<img class="logo-big " src="https://res.cloudinary.com/dx8q9ssty/image/upload/fl_lossy,f_auto,q_auto/v1523337688/logo-big.png ">
 
 						</div>
 						<!-- Content -->
@@ -1481,7 +1421,10 @@
 		<div id="about"></div>
 	</div>
 	<noscript id="deferred-styles">
-	  <link rel="stylesheet" type="text/css" href="css/main.css"/>
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600 " rel="stylesheet ">
+	 <link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" href="css/media.min.css">
 	</noscript>
 
 	<!--Main layout-->
@@ -2230,16 +2173,22 @@
 
 	<!-- SCRIPTS -->
 	<!-- JQuery -->
-	<script type="text/javascript " src="js/bootstrap.min.js "></script>
+
 	<script type="text/javascript " src="js/jquery-3.2.1.min.js "></script>
 
+
 	<!-- Bootstrap tooltips -->
-	<script type="text/javascript " src="js/popper.min.js "></script>
+	<script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript " src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<script type="text/javascript " src="js/mdb.min.js "></script>
-	<script type="text/javascript " src="js/scripts.min.js "></script>
+
+
 	<script type="text/javascript " src="js/lightbox.min.js "></script>
+
+	<script type="text/javascript " src="js/scripts.min.js "></script>
+
 	<script>
 		lightbox.option({
 			'maxWidth': 500
