@@ -1,3 +1,4 @@
+
 @media (max-width:1024px) {
 	.navbar {
 		background-color: rgba(255, 255, 255, 1)
@@ -132,10 +133,22 @@
 	body {
 		padding-top: 50px
 	}
+
+	.speaker-text {
+		font-weight: 600 !important;
+	}
+	.speaker-main {
+		font-size: 10px;
+		margin-left: -50px;
+	}
+
+	.speaker-ok {
+		font-size: 8px;
+		margin-left: -50px;
+	}
 	.speaker-text {
 		width: 45vw;
-		font-size: 9px;
-		margin-left: 95px
+		margin-left: 95px;
 	}
 	.register-message {
 		margin-top: -620px;
