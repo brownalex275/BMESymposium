@@ -1,3 +1,15 @@
+@media (min-width:1900px) {
+	.speaker-text {
+		width: 10vw;
+	}
+}
+
+@media (min-width:1300px) {
+	.speaker-text {
+		width: 14vw;
+	}
+}
+
 
 @media (max-width:1024px) {
 	.navbar {
@@ -27,35 +39,82 @@
 		transform: scale(.9);
 		margin-top: 200px
 	}
-	section.schedule-section>div>div>div:nth-child(1) {
+	section.schedule-section > div > div > div:nth-child(1) {
 		margin-left: 125px
 	}
-	section.schedule-section>div>div>div:nth-child(2) {
+	section.schedule-section > div > div > div:nth-child(2) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(3) {
+	section.schedule-section > div > div > div:nth-child(3) {
 		margin-left: 25px
 	}
-	section.schedule-section>div>div>div:nth-child(5) {
+	section.schedule-section > div > div > div:nth-child(5) {
 		margin-left: 42px
 	}
-	section.schedule-section>div>div>div:nth-child(6) {
+	section.schedule-section > div > div > div:nth-child(6) {
 		margin-left: 5px
 	}
-	section.schedule-section>div>div>div:nth-child(7) {
+	section.schedule-section > div > div > div:nth-child(7) {
 		margin-left: 125px
 	}
-	section.schedule-section>div>div>div:nth-child(8) {
+	section.schedule-section > div > div > div:nth-child(8) {
 		margin-left: 212px
 	}
-	section.schedule-section>div>div>div:nth-child(9) {
+	section.schedule-section > div > div > div:nth-child(9) {
 		margin-left: 125px
 	}
-	section.schedule-section>div>div>div:nth-child(10) {
+	section.schedule-section > div > div > div:nth-child(10) {
 		margin-left: 315px
 	}
-	section.schedule-section>div>div>div:nth-child(11) {
+	section.schedule-section > div > div > div:nth-child(11) {
 		margin-left: 125px
+	}
+}
+
+@media (max-width: 800px) {
+	.speaker-main {
+		font-size: 10px;
+
+	}
+
+	.speaker-ok {
+		font-size: 7px;
+
+	}
+	.speaker-text {
+		width: 17vw;
+
+	}
+
+	.speaker-about {
+		font-size: 7px;
+	}
+	section.schedule-section > div > div > div:nth-child(1) {
+		margin-left: 0px;
+	}
+	section.schedule-section > div > div > div:nth-child(4) {
+		margin-left: 10px
+	}
+	section.schedule-section > div > div > div:nth-child(5) {
+		margin-left: 42px
+	}
+	section.schedule-section > div > div > div:nth-child(6) {
+		margin-left: 10px
+	}
+	section.schedule-section > div > div > div:nth-child(7) {
+		margin-left: 0
+	}
+	section.schedule-section > div > div > div:nth-child(8) {
+		margin-left: 215px
+	}
+	section.schedule-section > div > div > div:nth-child(9) {
+		margin-left: 0
+	}
+	section.schedule-section > div > div > div:nth-child(10) {
+		margin-left: 315px
+	}
+	section.schedule-section > div > div > div:nth-child(11) {
+		margin-left: 0
 	}
 }
 
@@ -97,35 +156,36 @@
 		margin-top: 50px;
 		margin-bottom: 100px
 	}
-	section.schedule-section>div>div>div:nth-child(1) {
-		margin-left: 0
+	section.schedule-section > div > div > div:nth-child(1) {
+		margin-left: 0px;
 	}
-	section.schedule-section>div>div>div:nth-child(4) {
+	section.schedule-section > div > div > div:nth-child(4) {
+		margin-left: 0px;
+	}
+	section.schedule-section > div > div > div:nth-child(5) {
+		margin-left: 0px;
+
+	}
+	section.schedule-section > div > div > div:nth-child(6) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(5) {
-		margin-left: 42px
-	}
-	section.schedule-section>div>div>div:nth-child(6) {
-		margin-left: 10px
-	}
-	section.schedule-section>div>div>div:nth-child(7) {
+	section.schedule-section > div > div > div:nth-child(7) {
 		margin-left: 0
 	}
-	section.schedule-section>div>div>div:nth-child(8) {
+	section.schedule-section > div > div > div:nth-child(8) {
 		margin-left: 215px
 	}
-	section.schedule-section>div>div>div:nth-child(9) {
+	section.schedule-section > div > div > div:nth-child(9) {
 		margin-left: 0
 	}
-	section.schedule-section>div>div>div:nth-child(10) {
+	section.schedule-section > div > div > div:nth-child(10) {
 		margin-left: 315px
 	}
-	section.schedule-section>div>div>div:nth-child(11) {
+	section.schedule-section > div > div > div:nth-child(11) {
 		margin-left: 0
 	}
 	section.photos img {
-		padding-bottom: 50px
+		padding-bottom: 50px;
 	}
 }
 
@@ -169,44 +229,44 @@
 		transform: scale(.8);
 		margin-top: 100px
 	}
-	section.schedule-section>div>div>div:nth-child(1) {
+	section.schedule-section > div > div > div:nth-child(1) {
 		margin-left: 10px;
 		margin-right: 20px
 	}
-	section.schedule-section>div>div>div:nth-child(2) {
+	section.schedule-section > div > div > div:nth-child(2) {
 		margin-left: 10px;
 		margin-right: 20px
 	}
-	section.schedule-section>div>div>div:nth-child(3) {
+	section.schedule-section > div > div > div:nth-child(3) {
 		margin-left: 10px;
 		margin-right: 130px
 	}
-	section.schedule-section>div>div>div:nth-child(4) {
+	section.schedule-section > div > div > div:nth-child(4) {
 		margin-left: 10px;
 		margin-right: 30px
 	}
-	section.schedule-section>div>div>div:nth-child(5) {
+	section.schedule-section > div > div > div:nth-child(5) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(6) {
+	section.schedule-section > div > div > div:nth-child(6) {
 		margin-left: 10px;
 		margin-right: 30px
 	}
-	section.schedule-section>div>div>div:nth-child(7) {
+	section.schedule-section > div > div > div:nth-child(7) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(8) {
+	section.schedule-section > div > div > div:nth-child(8) {
 		margin-left: 10px;
 		margin-right: 100px
 	}
-	section.schedule-section>div>div>div:nth-child(9) {
+	section.schedule-section > div > div > div:nth-child(9) {
 		margin-left: 10px;
 		margin-right: 40px
 	}
-	section.schedule-section>div>div>div:nth-child(10) {
+	section.schedule-section > div > div > div:nth-child(10) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(11) {
+	section.schedule-section > div > div > div:nth-child(11) {
 		margin-left: 10px
 	}
 	section.photos {
@@ -238,24 +298,24 @@
 	#myBtn i {
 		right: 2px
 	}
-	section.schedule-section>div>div>div:nth-child(2) {
+	section.schedule-section > div > div > div:nth-child(2) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(3) {
+	section.schedule-section > div > div > div:nth-child(3) {
 		margin-right: 60px;
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(4) {
+	section.schedule-section > div > div > div:nth-child(4) {
 		margin-right: 60px;
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(7) {
+	section.schedule-section > div > div > div:nth-child(7) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(8) {
+	section.schedule-section > div > div > div:nth-child(8) {
 		margin-right: 60px
 	}
-	section.schedule-section>div>div>div:nth-child(9) {
+	section.schedule-section > div > div > div:nth-child(9) {
 		margin-left: 10px
 	}
 	section.photos img {
@@ -276,16 +336,16 @@
 		width: 60vw;
 		margin-left: 45px
 	}
-	section.schedule-section>div>div>div:nth-child(3) {
+	section.schedule-section > div > div > div:nth-child(3) {
 		margin-right: 2px
 	}
-	section.schedule-section>div>div>div:nth-child(4) {
+	section.schedule-section > div > div > div:nth-child(4) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(7) {
+	section.schedule-section > div > div > div:nth-child(7) {
 		margin-left: 10px
 	}
-	section.schedule-section>div>div>div:nth-child(9) {
+	section.schedule-section > div > div > div:nth-child(9) {
 		margin-left: 10px
 	}
 	.register-message {
