@@ -34,9 +34,8 @@
 		}, 500);
 	});
 
-	$('.navbar-nav>li>a').on('click', function () {
-		$('.navbar-collapse').collapse('hide');
-	});
+
+
 	// When the user clicks on the button, scroll to the top of the document
 	function topFunction() {
 		document.body.scrollTop = 0; // For Safari
@@ -50,7 +49,7 @@
 		var org = document.getElementById("org").value;
 		// Returns successful data submission message when the entered information is stored in database.
 		var dataString = 'fname1=' + fname + '&email1=' + email + '&lname1=' + lname + '&org1=' + org;
-		if (fname == '' || email == '' || lname == '' || org == '') {
+		if (fname == '' || email == '' || lname == '') {
 			alert("Please Fill All Fields");
 		} else {
 			// AJAX code to submit form.
@@ -85,8 +84,4 @@
 
 	$('#org').focusin(function () {
 		$("#olabel").hide();
-	});
-
-	$(function () {
-		$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 	});
