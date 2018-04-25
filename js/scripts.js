@@ -5,7 +5,7 @@
 
 	window.onload = function () {
 		if ( /* conditions */ window.innerWidth > 480)
-			document.querySelector("video").src = "https://res.cloudinary.com/dx8q9ssty/video/upload/v1523339931/video.mp4";
+			document.querySelector("video").src = "http://res.cloudinary.com/dx8q9ssty/video/upload/v1524624115/Teams/Splash.mp4";
 	};
 
 

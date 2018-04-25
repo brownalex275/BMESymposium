@@ -20123,7 +20123,7 @@ section .contact {
 	background-color: rgba(255, 255, 255, .1)
 }
 
-.rgba-white-light {
+.rgba-over-light {
 	background-color: rgba(255, 255, 255, .3)
 }
 
@@ -43702,7 +43702,9 @@ textarea {
 }
 
 
-
+.present-time {
+	font-weight: 600;
+}
 
 .container.gallery-container {
 	background-color: rgba(255, 255, 255, 0);
