@@ -43126,8 +43126,6 @@ video {
 }
 
 
-
-
 .navbar a {
 	font-weight: 500;
 	color: #330033 !important;
@@ -43140,12 +43138,6 @@ video {
 .navbar-nav > li > .dropdown-menu {
 	background-color: #FF0000;
 }
-
-.logo {
-	width: 20vh;
-	height: auto;
-}
-
 
 #contactTitle {
 	font-family: Montserrat, sans-serif;
