@@ -43066,7 +43066,9 @@ section {
 	background-color: rgba(255, 255, 255, 0.56);
 }
 
-
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
 
 .navbar {
 	background-color: rgba(255, 255, 255, 1);
