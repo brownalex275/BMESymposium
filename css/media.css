@@ -1,23 +1,9 @@
-@media (min-width:1900px) {
-	.speaker-text {
-		width: 10vw
-	}
-}
-
-@media (min-width:1300px) {
-	.speaker-text {
-		width: 14vw
-	}
-}
 
 @media (max-width:1024px) {
 	.navbar {
 		background-color: rgba(255, 255, 255, 1)
 	}
-	.speaker-text {
-		width: 18vw;
-		margin-left: 3px
-	}
+
 	.speaker-name {
 		margin-left: 0
 	}
@@ -78,7 +64,7 @@
 		font-size: 7px
 	}
 	.speaker-text {
-		width: 17vw
+		width: 140px;
 	}
 	.speaker-about {
 		font-size: 7px
@@ -119,10 +105,9 @@
 	.row-mobile-2 {
 		text-align: center
 	}
+
 	.speaker-text {
-		width: 19vw;
-		font-size: 7px;
-		margin-left: -3px
+		width: 140px;
 	}
 	.register-message {
 		margin-top: -700px;
@@ -187,6 +172,8 @@
 		padding-top: 50px
 	}
 	.speaker-text {
+		width: 190px;
+		left: 103px;
 		font-weight: 600!important
 	}
 	.speaker-main {
@@ -197,10 +184,7 @@
 		font-size: 8px;
 		margin-left: -50px
 	}
-	.speaker-text {
-		width: 45vw;
-		margin-left: 95px
-	}
+
 	.register-message {
 		margin-top: -620px;
 		margin-left: -30px;
@@ -272,10 +256,13 @@
 		margin-top: 50px;
 		margin-bottom: 100px
 	}
+
 	.speaker-text {
-		width: 50vw;
-		margin-left: 75px
+		width: 190px;
+		left: 78px;
+		font-weight: 600!important
 	}
+
 	.register-message {
 		margin-left: -60px
 	}
@@ -315,18 +302,9 @@
 	}
 }
 
-@media (max-width:370px) {
-	.speaker-text {
-		width: 50vw;
-		margin-left: 70px
-	}
-}
 
 @media (max-width:330px) {
-	.speaker-text {
-		width: 60vw;
-		margin-left: 45px
-	}
+
 	section.schedule-section > div > div > div:nth-child(3) {
 		margin-right: 2px
 	}
@@ -348,5 +326,11 @@
 		transform: scale(.4);
 		margin-left: -55px;
 		margin-top: 10px
+	}
+
+	.speaker-text {
+		width: 190px;
+		left: 50px;
+		font-weight: 600!important
 	}
 }
