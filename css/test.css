@@ -43430,6 +43430,107 @@ section.schedule-section > div > div > div:nth-child(11) {
 	margin-left: 20px;
 }
 
+.shuttle-section {
+	background-color: white;
+	font-family: 'Montserrat', 'sans-serif';
+	font-weight: 300;
+}
+
+#shuttleTitle {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	letter-spacing: 3px;
+	color: #330033 !important;
+	margin-bottom: 50px;
+	position: relative;
+
+}
+
+#shuttleTitle:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 5px;
+	background-color: #9b30e8;
+	margin-bottom: 10px;
+	margin-right: 10px;
+
+
+}
+
+.btn-success {
+	background-color: #4B9CD3 !important;
+}
+
+.btn-warning {
+	background-color:#CC0000 !important;
+}
+
+.btn-danger {
+	background-color: #808080 !important;
+}
+
+.btn-default {
+	background-color: #330033 !important;
+}
+.center-table {
+	margin: 0px auto;
+}
+
+.shuttle-section h1 {
+	text-align: center;
+}
+.shuttle-section .table {
+	font-family: 'Montserrat','sans-serif' !important;
+
+}
+
+.shuttle-section thead {
+	font-size: 30px;
+}
+
+.shuttle-section th, .shuttle-section td {
+	font-weight: 600;
+
+}
+
+.content-footer {
+	padding-top: 20px;
+}
+.shuttle-section .content-footer p {
+	color:#303;
+	font-size: 13px;
+	text-align: center;
+}
+.shuttle-section .content-footer p a {
+	color: inherit;
+	font-weight: bold;
+}
+
+.shuttle-section .map {
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+
+
+}
+
+/*	--------------------------------------------------
+	:: Table Filter
+	-------------------------------------------------- */
+.panel {
+	border: 1px solid #ddd;
+	background-color: #fcfcfc;
+}
+.panel .btn-group {
+	margin: 15px 0 30px;
+}
+.panel .btn-group .btn {
+	-webkit-transition: background-color .3s ease;
+	transition: background-color .3s ease;
+}
+
 #venue-title {
 	font-family: Montserrat, sans-serif;
 	font-weight: 600;
@@ -44088,7 +44189,7 @@ a.link-text:hover {
 
 
 .photos {
-	background-color: white;
+	background-color: #F8F8F8;
 }
 
 .no-margin {

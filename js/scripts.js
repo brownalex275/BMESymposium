@@ -21,7 +21,7 @@ function detectmob() {
 
 $(window).on('load', function () {
 	// Animate loader off screen
-	$(".loader").fadeOut("slow");;
+	$(".loader").fadeOut("slow");
 });
 
 
@@ -50,7 +50,20 @@ $('#myBtn').click(function () { // When arrow is clicked
 	}, 500);
 });
 
+$(document).ready(function () {
 
+	$('.btn-filter').on('click', function () {
+		var $target = $(this).data('target');
+		if ($target != 'all') {
+			$('.table tr').css('display', 'none');
+			$('.table tr[data-status=info]').fadeIn('slow');
+			$('.table tr[data-status="' + $target + '"]').fadeIn('slow');
+		} else {
+			$('.table tr').css('display', 'none').fadeIn('slow');
+		}
+	});
+
+});
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
