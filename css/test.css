@@ -43493,7 +43493,13 @@ section.schedule-section > div > div > div:nth-child(11) {
 	font-weight: 600;
 
 }
+.shuttle-section h5 {
+	font-size: 15px !important;
+	color: gray !important;
+	font-family: 'Montserrat','sans-serif' !important;
+	padding-bottom: 20px;
 
+}
 .content-footer {
 	padding-top: 20px;
 }
